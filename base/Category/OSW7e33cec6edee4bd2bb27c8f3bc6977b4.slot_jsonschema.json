@@ -1,0 +1,188 @@
+{
+    "@context": [
+        "/wiki/Category:OSW4ef92ac53714494da09c377898bf275f?action=raw&slot=jsonschema",
+        {
+            "used_scale": "Property:HasTool"
+        }
+    ],
+    "allOf": [
+        {
+            "$ref": "/wiki/Category:OSW4ef92ac53714494da09c377898bf275f?action=raw&slot=jsonschema"
+        }
+    ],
+    "type": "object",
+    "uuid": "7e33cec6-edee-4bd2-bb27-c8f3bc6977b4",
+    "title": "gravimetric SiO2 determination",
+    "title*": {
+        "de": "Gravimetrische SiO2 Bestimmung"
+    },
+    "description": "Gravimetrische Ermittlung des Siliziumanteils einer Probe.",
+    "description*": {
+        "de": "Gravimetrische Ermittlung des Siliziumanteils einer Probe."
+    },
+    "required": [
+        "type",
+        "uuid"
+    ],
+    "defaultProperties": [
+        "used_scale",
+        "crucible_id",
+        "empty_crucible_mass",
+        "sample_initial_weight",
+        "ignited_crucible_weight",
+        "after_hf_weight"
+    ],
+    "properties": {
+        "type": {
+            "default": [
+                "Category:OSW7e33cec6edee4bd2bb27c8f3bc6977b4"
+            ],
+            "options": {
+                "hidden": true
+            }
+        },
+        "uuid": {
+            "type": "string",
+            "format": "uuid",
+            "options": {
+                "hidden": true
+            }
+        },
+        "label": {
+            "items": {
+                "properties": {
+                    "text": {
+                        "dynamic_template": "Gravimetric SiO2 determination {{{dateformat 'Y_m_d-H_i_s' (_now_)}}}"
+                    }
+                }
+            },
+            "options": {
+                "hidden": true
+            }
+        },
+        "used_scale": {
+            "type": "string",
+            "title": "Used Scale",
+            "title*": {
+                "de": "Verwendete Waage"
+            },
+            "format": "autocomplete",
+            "range": "Category:OSW7506cc847c8550bbbdba20e9c616cf85"
+        },
+        "crucible_id": {
+            "type": "string",
+            "title": "Pt Crucible Nr",
+            "title*": {
+                "de": "Pt Tiegel Nr."
+            }
+        },
+        "empty_crucible_mass": {
+            "allOf": [
+                {
+                    "$ref": "/wiki/JsonSchema:QuantityProperty?action=raw"
+                }
+            ],
+            "$comment": "We can overwrite several definitions",
+            "title": "Empty Crucible Mass",
+            "title*": {
+                "de": "Gewicht leere Schale"
+            },
+            "properties": {
+                "quantity": {
+                    "default": "Property:HasMass",
+                    "readonly": true
+                },
+                "unit": {
+                    "default": "Property:HasMass#OSW2b1a3a39eceb4249b86897def91134dc",
+                    "readonly": true
+                },
+                "unit_symbol": {
+                    "$comment": "To set a default unit, we need to set both 'unit' and 'unit_symbol'",
+                    "default": "g",
+                    "readonly": true
+                }
+            }
+        },
+        "sample_initial_weight": {
+            "allOf": [
+                {
+                    "$ref": "/wiki/JsonSchema:QuantityProperty?action=raw"
+                }
+            ],
+            "$comment": "We can overwrite several definitions",
+            "title": "Sample Initial Weight",
+            "title*": {
+                "de": "Einwaage Probe"
+            },
+            "properties": {
+                "quantity": {
+                    "default": "Property:HasMass",
+                    "readonly": true
+                },
+                "unit": {
+                    "default": "Property:HasMass#OSW2b1a3a39eceb4249b86897def91134dc",
+                    "readonly": true
+                },
+                "unit_symbol": {
+                    "$comment": "To set a default unit, we need to set both 'unit' and 'unit_symbol'",
+                    "default": "g",
+                    "readonly": true
+                }
+            }
+        },
+        "ignited_crucible_weight": {
+            "allOf": [
+                {
+                    "$ref": "/wiki/JsonSchema:QuantityProperty?action=raw"
+                }
+            ],
+            "$comment": "We can overwrite several definitions",
+            "title": "Ignited Crucible Weight",
+            "title*": {
+                "de": "Gewicht Tiegel nach Glühen"
+            },
+            "properties": {
+                "quantity": {
+                    "default": "Property:HasMass",
+                    "readonly": true
+                },
+                "unit": {
+                    "default": "Property:HasMass#OSW2b1a3a39eceb4249b86897def91134dc",
+                    "readonly": true
+                },
+                "unit_symbol": {
+                    "$comment": "To set a default unit, we need to set both 'unit' and 'unit_symbol'",
+                    "default": "g",
+                    "readonly": true
+                }
+            }
+        },
+        "after_hf_weight": {
+            "allOf": [
+                {
+                    "$ref": "/wiki/JsonSchema:QuantityProperty?action=raw"
+                }
+            ],
+            "$comment": "We can overwrite several definitions",
+            "title": "Weight of crucible after HF digestion",
+            "title*": {
+                "de": "Gewicht Tiegel nach HF-Abrauchen"
+            },
+            "properties": {
+                "quantity": {
+                    "default": "Property:HasMass",
+                    "readonly": true
+                },
+                "unit": {
+                    "default": "Property:HasMass#OSW2b1a3a39eceb4249b86897def91134dc",
+                    "readonly": true
+                },
+                "unit_symbol": {
+                    "$comment": "To set a default unit, we need to set both 'unit' and 'unit_symbol'",
+                    "default": "g",
+                    "readonly": true
+                }
+            }
+        }
+    }
+}

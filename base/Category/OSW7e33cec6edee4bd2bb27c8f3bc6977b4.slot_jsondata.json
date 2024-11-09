@@ -1,0 +1,26 @@
+{
+    "type": [
+        "Category:OSWc11438cd6c814ed1a5a253555ee351b4"
+    ],
+    "subclass_of": [
+        "Category:OSW4ef92ac53714494da09c377898bf275f"
+    ],
+    "uuid": "7e33cec6-edee-4bd2-bb27-c8f3bc6977b4",
+    "label": [
+        {
+            "text": "Gravimetric Determination of Silicon Content",
+            "lang": "en"
+        },
+        {
+            "text": "Gravimetrische Bestimmung des Siliziumanteils",
+            "lang": "de"
+        }
+    ],
+    "description": [
+        {
+            "text": "Gravimetrische Ermittlung des Siliziumanteils einer Probe.",
+            "lang": "de"
+        }
+    ],
+    "name": "GravimetricAndIcpDeterminationOfSiliconContent"
+}

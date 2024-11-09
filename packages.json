@@ -12,7 +12,7 @@
             "globalID": "de.fraunhofer.isc.osl.lab.analytics",
             "label": "ISC Lab Analytics",
             "description": "Extends the ISC Package 'de.fraunhofer.isc.osl.lab' with concepts and pages that are specific to the (chemical) analytics.",
-            "version": "0.2.0",
+            "version": "0.2.1",
             "requiredPackages": [
                 "de.fraunhofer.isc.osl.lab"
             ],
@@ -513,6 +513,26 @@
                         },
                         "jsonschema": {
                             "urlPath": "Category/OSWb6a227a110c54a4b95a9bfe0c41da102.slot_jsonschema.json"
+                        }
+                    }
+                },
+                {
+                    "name": "OSW7e33cec6edee4bd2bb27c8f3bc6977b4",
+                    "label": "GravimetricAndIcpDeterminationOfSiliconContent",
+                    "namespace": "NS_CATEGORY",
+                    "urlPath": "Category/OSW7e33cec6edee4bd2bb27c8f3bc6977b4.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Category/OSW7e33cec6edee4bd2bb27c8f3bc6977b4.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Category/OSW7e33cec6edee4bd2bb27c8f3bc6977b4.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Category/OSW7e33cec6edee4bd2bb27c8f3bc6977b4.slot_jsondata.json"
+                        },
+                        "jsonschema": {
+                            "urlPath": "Category/OSW7e33cec6edee4bd2bb27c8f3bc6977b4.slot_jsonschema.json"
                         }
                     }
                 }
