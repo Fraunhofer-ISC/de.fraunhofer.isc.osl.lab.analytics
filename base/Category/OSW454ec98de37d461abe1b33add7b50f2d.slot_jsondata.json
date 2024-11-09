@@ -1,0 +1,44 @@
+{
+    "type": [
+        "Category:OSW417008476ca94a3ebe59846b4e87c3fa"
+    ],
+    "process_list": [
+        {
+            "uuid": "7d725131-eb57-40a7-893e-9a64e66d39dc",
+            "process_category": "Category:OSW5bcc582b12a440559eccbd75c6da00fd",
+            "key": "loss_on_ignition"
+        },
+        {
+            "uuid": "539d8a00-fafe-4e6b-9cd6-1e74699ad189",
+            "process_category": "Category:OSWa8f0708e996d4a66bc1d6e8c2e27b75c",
+            "key": "milling"
+        },
+        {
+            "uuid": "463fe230-3264-412e-8c8a-59af8149f7bb",
+            "process_category": "Category:OSW8c89baeb38e6418184f6bdd582489b7a",
+            "key": "silicon_determination"
+        },
+        {
+            "uuid": "07036f36-a862-41a3-b539-204e16d81246",
+            "process_category": "Category:OSW37065ca362824d37b2d81dd8bbef1ca3",
+            "key": "other_oxides_determination"
+        }
+    ],
+    "format": "categories",
+    "subclass_of": [
+        "Category:OSW65f6adea07934d169b769105a4c25458"
+    ],
+    "uuid": "454ec98d-e37d-461a-be1b-33add7b50f2d",
+    "label": [
+        {
+            "text": "ICP-OES an Steinwolle",
+            "lang": "de"
+        },
+        {
+            "text": "ICP-OES for Rockwool",
+            "lang": "en"
+        }
+    ],
+    "description": [],
+    "name": "IcpOesAnSteinwolle"
+}

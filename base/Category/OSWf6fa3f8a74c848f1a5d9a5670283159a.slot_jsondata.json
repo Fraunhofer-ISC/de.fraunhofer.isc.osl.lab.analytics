@@ -1,0 +1,30 @@
+{
+    "type": [
+        "Category:OSWc11438cd6c814ed1a5a253555ee351b4"
+    ],
+    "subclass_of": [
+        "Category:OSW4ef92ac53714494da09c377898bf275f"
+    ],
+    "uuid": "f6fa3f8a-74c8-48f1-a5d9-a5670283159a",
+    "label": [
+        {
+            "text": "Weighing",
+            "lang": "en"
+        },
+        {
+            "text": "Wiegen",
+            "lang": "de"
+        }
+    ],
+    "description": [
+        {
+            "text": "Messung des Gewichts von Etwas.",
+            "lang": "de"
+        },
+        {
+            "text": "Determination of the weight of something.",
+            "lang": "en"
+        }
+    ],
+    "name": "Weighing"
+}

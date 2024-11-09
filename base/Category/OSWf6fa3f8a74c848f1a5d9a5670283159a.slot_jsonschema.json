@@ -1,0 +1,70 @@
+{
+    "@context": [
+        "/wiki/Category:OSW4ef92ac53714494da09c377898bf275f?action=raw&slot=jsonschema",
+        {
+            "mass_statement": "Property:HasStatement"
+        }
+    ],
+    "allOf": [
+        {
+            "$ref": "/wiki/Category:OSW4ef92ac53714494da09c377898bf275f?action=raw&slot=jsonschema"
+        }
+    ],
+    "type": "object",
+    "uuid": "f6fa3f8a-74c8-48f1-a5d9-a5670283159a",
+    "title": "Weighing",
+    "title*": {
+        "en": "Weighing",
+        "de": "Wiegen"
+    },
+    "description": "Messung des Gewichts von Etwas.",
+    "description*": {
+        "de": "Messung des Gewichts von Etwas.",
+        "en": "Determination of the weight of something."
+    },
+    "required": [
+        "type",
+        "uuid"
+    ],
+    "defaultProperties": [
+        "mass_statement"
+    ],
+    "properties": {
+        "type": {
+            "default": [
+                "Category:OSWf6fa3f8a74c848f1a5d9a5670283159a"
+            ]
+        },
+        "uuid": {
+            "type": "string",
+            "format": "uuid",
+            "options": {
+                "hidden": true
+            }
+        },
+        "mass_statement": {
+            "allOf": [
+                {
+                    "$ref": "/wiki/JsonSchema:QuantityProperty?action=raw"
+                }
+            ],
+            "$comment": "We can overwrite several definitions",
+            "title": "Mass",
+            "title*": {
+                "de": "Masse"
+            },
+            "properties": {
+                "quantity": {
+                    "template": "Property:HasMass"
+                },
+                "unit": {
+                    "default": "Property:HasMass#OSW2b1a3a39eceb4249b86897def91134dc"
+                },
+                "unit_symbol": {
+                    "$comment": "To set a default unit, we need to set both 'unit' and 'unit_symbol'",
+                    "default": "g"
+                }
+            }
+        }
+    }
+}

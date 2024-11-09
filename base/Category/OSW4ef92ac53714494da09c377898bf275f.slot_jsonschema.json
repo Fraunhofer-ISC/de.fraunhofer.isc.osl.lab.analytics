@@ -1,0 +1,133 @@
+{
+    "@context": [
+        "/wiki/Category:OSWe5aa96bffb1c4d95be7fbd46142ad203?action=raw&slot=jsonschema",
+        "/wiki/Category:OSWa4d7cfe85cc3498e87d7825efa831d65?action=raw&slot=jsonschema",
+        {
+            "raw_data": {
+                "@id": "Property:HasRawData",
+                "@type": "@id"
+            },
+            "raw_data_link": {
+                "@id": "Property:HasRawData",
+                "@type": "@id"
+            },
+            "measurement_device": {
+                "@id": "Property:HasTool",
+                "@type": "@id"
+            },
+            "samples": {
+                "@id": "Property:HasInput",
+                "@type": "@id"
+            }
+        }
+    ],
+    "allOf": [
+        {
+            "$ref": "/wiki/Category:OSWe5aa96bffb1c4d95be7fbd46142ad203?action=raw&slot=jsonschema"
+        }
+    ],
+    "type": "object",
+    "uuid": "4ef92ac5-3714-494d-a09c-377898bf275f",
+    "title": "MeasurementProcess",
+    "title*": {
+        "en": "Measurement Process",
+        "de": "Messprozess"
+    },
+    "description": "A process in which a property of a sample is determined.",
+    "description*": {
+        "en": "A process in which a property of a sample is determined.",
+        "de": "Ein Prozess, bei dem Eigenschaften einer Probe bestimmt werden."
+    },
+    "required": [
+        "type"
+    ],
+    "properties": {
+        "type": {
+            "default": [
+                "Category:OSW4ef92ac53714494da09c377898bf275f"
+            ]
+        },
+        "raw_data": {
+            "type": "array",
+            "title": "Raw data (file)",
+            "title*": {
+                "de": "Rohdaten (Datei)"
+            },
+            "items": {
+                "title": "Raw data",
+                "title*": {
+                    "de": "Rohdaten"
+                },
+                "type": "string",
+                "format": "url",
+                "options": {
+                    "upload": {}
+                },
+                "links": [
+                    {
+                        "href": "{{#if self}}/w/index.php?title=Special:Redirect/file/{{self}}{{/if}}",
+                        "rel": "{{#if self}}download{{/if}}",
+                        "download": true
+                    }
+                ]
+            }
+        },
+        "raw_data_link": {
+            "type": "array",
+            "title": "Raw data (link)",
+            "title*": {
+                "de": "Rohdaten (Link)"
+            },
+            "items": {
+                "title": "Raw data",
+                "title*": {
+                    "de": "Rohdaten"
+                },
+                "type": "string",
+                "format": "iri"
+            }
+        },
+        "samples": {
+            "type": "array",
+            "title": "Samples",
+            "title*": {
+                "de": "Proben"
+            },
+            "items": {
+                "type": "string",
+                "title": "Sample",
+                "title*": {
+                    "de": "Probe"
+                },
+                "format": "autocomplete",
+                "options": {
+                    "autocomplete": {
+                        "$comment": "PhysicalItem",
+                        "category": "Category:OSW37a57741ae2e4dd4b29b1172b6848be8"
+                    }
+                }
+            }
+        },
+        "measurement_device": {
+            "type": "array",
+            "title": "Measurement Devices",
+            "title*": {
+                "de": "Messgeräte"
+            },
+            "items": {
+                "type": "string",
+                "title": "Measurement Device",
+                "title*": {
+                    "de": "Messgerät"
+                },
+                "format": "autocomplete",
+                "options": {
+                    "autocomplete": {
+                        "$comment": "Measurement Device",
+                        "category": "Category:OSWdd31b71b06915d0182e40d15953f3daa"
+                    }
+                }
+            }
+        }
+    }
+}

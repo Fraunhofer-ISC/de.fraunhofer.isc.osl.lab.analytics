@@ -1,0 +1,33 @@
+{
+    "@context": [
+        "/wiki/Category:OSW4ef92ac53714494da09c377898bf275f?action=raw&slot=jsonschema",
+        "/wiki/Category:OSWb83e84ddc4cd4afd988391c98ee5eb48?action=raw&slot=jsonschema"
+    ],
+    "allOf": [
+        {
+            "$ref": "/wiki/Category:OSWb83e84ddc4cd4afd988391c98ee5eb48?action=raw&slot=jsonschema"
+        }
+    ],
+    "type": "object",
+    "uuid": "c4a5814e-f071-43b6-879e-86d6d9be9294",
+    "title": "RoentgenfluoreszenzanalyseRfa",
+    "title*": {
+        "de": "Röntgenfluoreszenzanalyse (RFA)",
+        "en": "X-ray Fluorescence Analysis (XRF)"
+    },
+    "description": "A Process in which Information about the chemical composition of a material is extracted by analyzing characteristic fluorescence spectra excited by x-rays",
+    "description*": {
+        "en": "A Process in which Information about the chemical composition of a material is extracted by analyzing characteristic fluorescence spectra excited by x-rays",
+        "de": "Ein Prozess, bei dem Informationen über die chemische Zusammensetzung eines Stoffes gewonnen werden, indem charakteristische Fluoreszensspektren analysiert werden, die durch Röntgenstrahlen angeregt wurden."
+    },
+    "required": [
+        "type"
+    ],
+    "properties": {
+        "type": {
+            "default": [
+                "Category:OSWc4a5814ef07143b6879e86d6d9be9294"
+            ]
+        }
+    }
+}

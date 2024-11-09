@@ -1,0 +1,8 @@
+== Proben zugeordnete Aufgaben ==
+{{#ask: [[-HasInput::{{FULLPAGENAME}}]]
+|?HasId=ID
+|?HasName=Name
+|?HasOswId=OSW Id
+|?HasPlannedProcess=Geplante Prozesse
+|format=table
+}}

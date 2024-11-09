@@ -1,0 +1,37 @@
+{
+    "@context": [
+        "/wiki/Category:OSWbb4dcf3518204aacaf5b2e49d38289fb?action=raw&slot=jsonschema"
+    ],
+    "allOf": [
+        {
+            "$ref": "/wiki/Category:OSWbb4dcf3518204aacaf5b2e49d38289fb?action=raw&slot=jsonschema"
+        }
+    ],
+    "type": "object",
+    "uuid": "7c7e07b4-e6a4-4158-a624-3cffa397c86e",
+    "title": "HfHclo4Digestion",
+    "title*": {
+        "en": "HF/HClO4 Digestion",
+        "de": "HF/HClO4 Aufschluss"
+    },
+    "description": "",
+    "description*": {},
+    "required": [
+        "type",
+        "uuid"
+    ],
+    "properties": {
+        "type": {
+            "default": [
+                "Category:OSW7c7e07b4e6a44158a6243cffa397c86e"
+            ]
+        },
+        "uuid": {
+            "type": "string",
+            "format": "uuid",
+            "options": {
+                "hidden": true
+            }
+        }
+    }
+}

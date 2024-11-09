@@ -1,0 +1,132 @@
+{
+    "@context": [
+        "/wiki/Category:OSWe5aa96bffb1c4d95be7fbd46142ad203?action=raw&slot=jsonschema"
+    ],
+    "allOf": [
+        {
+            "$ref": "/wiki/Category:OSWe5aa96bffb1c4d95be7fbd46142ad203?action=raw&slot=jsonschema"
+        }
+    ],
+    "type": "object",
+    "uuid": "bb4dcf35-1820-4aac-af5b-2e49d38289fb",
+    "title": "ChemicalDigestionForIcp",
+    "title*": {
+        "en": "Chemical Digestion for ICP",
+        "de": "Chemischer Aufschluss für ICP"
+    },
+    "description": "",
+    "description*": {},
+    "required": [
+        "type",
+        "uuid"
+    ],
+    "defaultProperties": [
+        "partial_samples",
+        "used_scale"
+    ],
+    "properties": {
+        "type": {
+            "default": [
+                "Category:OSW7c7e07b4e6a44158a6243cffa397c86e",
+                "Category:OSWbb4dcf3518204aacaf5b2e49d38289fb"
+            ]
+        },
+        "uuid": {
+            "type": "string",
+            "format": "uuid",
+            "options": {
+                "hidden": true
+            }
+        },
+        "used_scale": {
+            "type": "string",
+            "title": "Used Scale",
+            "title*": {
+                "de": "Verwendete Waage"
+            },
+            "format": "autocomplete",
+            "range": "Category:OSW7506cc847c8550bbbdba20e9c616cf85"
+        },
+        "partial_samples": {
+            "title": "Partial Samples",
+            "title*": {
+                "de": "Teilproben"
+            },
+            "type": "array",
+            "format": "tabs",
+            "items": {
+                "title": "Partial Sample",
+                "title*": {
+                    "de": "Teilprobe"
+                },
+                "defaultProperties": [
+                    "crucible_id",
+                    "sample_initial_weight",
+                    "solvent_volume"
+                ],
+                "properties": {
+                    "crucible_id": {
+                        "type": "string",
+                        "title": "Pt Crucible Nr",
+                        "title*": {
+                            "de": "Pt Schale Nr."
+                        }
+                    },
+                    "sample_initial_weight": {
+                        "allOf": [
+                            {
+                                "$ref": "/wiki/JsonSchema:QuantityProperty?action=raw"
+                            }
+                        ],
+                        "$comment": "We can overwrite several definitions",
+                        "title": "Sample Initial Weight",
+                        "title*": {
+                            "de": "Einwaage Probe"
+                        },
+                        "properties": {
+                            "quantity": {
+                                "default": "Property:HasMass"
+                            },
+                            "unit": {
+                                "default": "Property:HasMass#OSW8840c06a1f5e4242904dd3e714fe22d6"
+                            },
+                            "unit_symbol": {
+                                "$comment": "To set a default unit, we need to set both 'unit' and 'unit_symbol'",
+                                "default": "mg"
+                            }
+                        }
+                    },
+                    "solvent_volume": {
+                        "allOf": [
+                            {
+                                "$ref": "/wiki/JsonSchema:QuantityProperty?action=raw"
+                            }
+                        ],
+                        "$comment": "We can overwrite several definitions",
+                        "title": "Solvent Volume",
+                        "title*": {
+                            "de": "Volumen Lösungsmittel"
+                        },
+                        "properties": {
+                            "quantity": {
+                                "default": "Property:HasVolume"
+                            },
+                            "unit": {
+                                "default": "Property:HasVolume#OSWb8cc22b1cbd44577b1fa48c440de7147"
+                            },
+                            "unit_symbol": {
+                                "$comment": "To set a default unit, we need to set both 'unit' and 'unit_symbol'",
+                                "default": "ml"
+                            }
+                        }
+                    }
+                }
+            },
+            "$comment": "two crucibles",
+            "default": [
+                {},
+                {}
+            ]
+        }
+    }
+}

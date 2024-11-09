@@ -1,0 +1,315 @@
+{
+    "@context": [
+        "/wiki/Category:OSWd29aa2537f434fbe87c74ded34ee34cb?action=raw&slot=jsonschema",
+        {
+            "$comment": {
+                "creation_report": {
+                    "@id": "Property:HasCreationReport",
+                    "@type": "@id"
+                }
+            },
+            "creation_report": {
+                "@id": "Property:HasFileAttachment",
+                "@type": "@id"
+            },
+            "id": "Property:HasId",
+            "process_plan": "Property:HasPlannedProcess"
+        }
+    ],
+    "allOf": [
+        {
+            "$ref": "/wiki/Category:OSWd29aa2537f434fbe87c74ded34ee34cb?action=raw&slot=jsonschema"
+        }
+    ],
+    "type": "object",
+    "format": "categories",
+    "uuid": "5000c5d4-7b2f-4764-8063-e0354d9d1199",
+    "title": "ZaaAcKleinauftrag",
+    "title*": {
+        "de": "ZAA AC Kleinauftrag",
+        "en": "ZAA AC Order"
+    },
+    "description": "Ein Kleinauftrag an die Abteilung Anorganische Chemie des Zentrums für Angewandte Analytik.",
+    "description*": {
+        "de": "Ein Kleinauftrag an die Abteilung Anorganische Chemie des Zentrums für Angewandte Analytik.",
+        "en": "An order to the anorganic chemistry group of the center for applied analytics."
+    },
+    "required": [
+        "type",
+        "id",
+        "lab",
+        "lab_abbreviation",
+        "uuid",
+        "workflow_runs"
+    ],
+    "defaultProperties": [
+        "orderer_role_list"
+    ],
+    "properties": {
+        "type": {
+            "default": [
+                "Category:OSW5000c5d47b2f47648063e0354d9d1199"
+            ]
+        },
+        "samples": {
+            "title": "AC Samples",
+            "title*": {
+                "de": "AC Proben"
+            },
+            "options": {
+                "array_copy_ignore": [
+                    "uuid",
+                    "osw_id",
+                    "id",
+                    "name",
+                    "attachments",
+                    "creation_report",
+                    "bcca_report_information"
+                ]
+            },
+            "eval_template": [
+                {
+                    "type": "mustache-wikitext",
+                    "mode": "render",
+                    "$comment": "render buttons for each sample with which an instance for the corresponding workflow can be created",
+                    "value": "{{#samples}}* {{{id}}} <br>geplant:\n{{#process_plan}} [[:{{{.}}}]] <div class=\"pagebot-button\" data-config='{ \"label\": \"➕\",   \"params\": {\"categories\": [\"{{{.}}}\"], \"jsondata\":{\"input\":[\"{{{osw_id}}}\"]}}}'></div>\ndokumentiert:\n{{=<% %>=}}{{#ask:[[HasInput::<%osw_id%>]]AND[[HasType::<%.%>]]}}<%={{ }}=%> {{/process_plan}}\n{{/samples}}"
+                }
+            ],
+            "items": {
+                "allOf": [
+                    {
+                        "$ref": "/wiki/Category:OSWd29aa2537f434fbe87c74ded34ee34cb?action=raw&slot=jsonschema#/properties/samples/items"
+                    }
+                ],
+                "title": "AC Sample",
+                "title*": {
+                    "de": "AC Probe"
+                },
+                "defaultProperties": [
+                    "process_plan"
+                ],
+                "properties": {
+                    "process_plan": {
+                        "title": "Process Plan",
+                        "title*": {
+                            "de": "Prozess Plan"
+                        },
+                        "description": "List of processes/methods that shall be performed on this sample",
+                        "description*": {
+                            "de": "Liste an Prozessen/Methoden, die auf diese Probe Angewendet werden sollen"
+                        },
+                        "propertyOrder": 1001,
+                        "type": "array",
+                        "items": {
+                            "title": "Method",
+                            "title*": {
+                                "de": "Methode"
+                            },
+                            "type": "string",
+                            "format": "autocomplete",
+                            "subclassof_range": "Category:OSWe5aa96bffb1c4d95be7fbd46142ad203"
+                        }
+                    },
+                    "bcca_report_information": {
+                        "title": "BCCA Report Information",
+                        "title*": {
+                            "de": "BCCA Bericht Informationen"
+                        },
+                        "type": "object",
+                        "description": "Will be used in the report",
+                        "description*": {
+                            "de": "Wird im Bericht verwendet"
+                        },
+                        "defaultProperties": [
+                            "sample_type",
+                            "creation_report",
+                            "date_of_sampling",
+                            "production_site",
+                            "place_of_sampling",
+                            "code_sealing",
+                            "bcca_dossier",
+                            "date_of_production",
+                            "reference_fiber_name",
+                            "internal_fiber_reference",
+                            "quantity_received"
+                        ],
+                        "properties": {
+                            "creation_report": {
+                                "title": "Sample Creation Report",
+                                "title*": {
+                                    "de": "Probennahmeprotokoll"
+                                },
+                                "$comment": "move line to bottom of schema",
+                                "propertyOrder": 1001,
+                                "type": "string",
+                                "format": "url",
+                                "options": {
+                                    "upload": {}
+                                },
+                                "links": [
+                                    {
+                                        "href": "{{#if self}}/w/index.php?title=Special:Redirect/file/{{self}}{{/if}}",
+                                        "rel": "{{#if self}}download{{/if}}",
+                                        "download": true
+                                    }
+                                ]
+                            },
+                            "sample_type": {
+                                "type": "string",
+                                "description": "will be the header of the sample description in the report. Ask Matthias Popp for more options",
+                                "enum": [
+                                    "Sample type to be specified",
+                                    "Brown mineral fibers",
+                                    "Glass fibers"
+                                ]
+                            },
+                            "date_of_sampling": {
+                                "type": "string"
+                            },
+                            "production_site": {
+                                "type": "string"
+                            },
+                            "place_of_sampling": {
+                                "type": "string"
+                            },
+                            "code_sealing": {
+                                "type": "string"
+                            },
+                            "bcca_dossier": {
+                                "type": "string"
+                            },
+                            "date_of_production": {
+                                "type": "string"
+                            },
+                            "reference_fiber_name": {
+                                "type": "string"
+                            },
+                            "internal_fiber_reference": {
+                                "type": "string"
+                            },
+                            "quantity_received": {
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "rfa_report_information": {
+                        "title": "RFA Report Information",
+                        "title*": {
+                            "de": "RFA Bericht Informationen"
+                        },
+                        "description": "To be implemented. Ask Matthias Popp"
+                    }
+                }
+            }
+        },
+        "id": {
+            "$commment": "copied from Category:OSW89d01b6ec9e9412aa6fadf244f59cc78",
+            "title": "ID",
+            "title*": {
+                "de": "ID"
+            },
+            "description*": {
+                "de": "Wird automatisch generiert"
+            },
+            "type": "string",
+            "watch": {
+                "lab_abbreviation": "root.lab_abbreviation"
+            },
+            "format": "dynamic_template",
+            "readonly": true,
+            "dynamic_template": "{{{lab_abbreviation}}}{{{dateformat 'Y' (_now_)}}}-{{{_global_index_}}}",
+            "propertyOrder": -10,
+            "options": {
+                "grid_columns": 6
+            }
+        },
+        "lab": {
+            "$comment": "rest inherited from Category:OSWd29aa2537f434fbe87c74ded34ee34cb",
+            "default": "Item:OSW211ff857198d4e3e9e2b9dbbdf1a7d1e"
+        },
+        "lab_abbreviation": {
+            "$comment": "override default",
+            "default": "AC"
+        },
+        "orderer_role_list": {
+            "title": "Contact Persons with Role",
+            "title*": {
+                "de": "Kontaktpersonen mit Rolle"
+            },
+            "description": "Persons and their roles with respect to report creation",
+            "description*": {
+                "de": "Personen und deren Rollen bezüglich Berichtserstellung"
+            },
+            "type": "array",
+            "format": "tabs",
+            "uniqueItems": true,
+            "options": {
+                "enable_array_copy": true,
+                "array_copy_ignore": [
+                    "person"
+                ]
+            },
+            "items": {
+                "title": "Contact",
+                "title*": "Kontakt",
+                "type": "object",
+                "defaultProperties": [
+                    "person",
+                    "roles"
+                ],
+                "format": "grid-strict",
+                "properties": {
+                    "person": {
+                        "type": "string",
+                        "range": "Category:OSW44deaa5b806d41a2a88594f562b110e9",
+                        "format": "autocomplete"
+                    },
+                    "roles": {
+                        "title": "Roles with respect to report",
+                        "title*": {
+                            "de": "Rollen bezüglich Bericht"
+                        },
+                        "type": "array",
+                        "format": "selectize",
+                        "uniqueItems": true,
+                        "options": {
+                            "grid_columns": 6
+                        },
+                        "items": {
+                            "title": "",
+                            "type": "string",
+                            "enum": [
+                                "receipt",
+                                "report"
+                            ],
+                            "options": {
+                                "enum_titles": [
+                                    "Receipt",
+                                    "Report"
+                                ],
+                                "enum_titles*": {
+                                    "de": [
+                                        "Rechnung",
+                                        "Bericht"
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "workflow_runs": {
+            "$ref": "/wiki/JsonSchema:PrefectWorkflowRuns?action=raw",
+            "$comment": "ICP Order Report Generation Flow",
+            "default": {
+                "tool": [
+                    "Item:OSW40650def508f5eecbe25200e181a7faa"
+                ]
+            },
+            "options": {
+                "collapsed": true
+            }
+        }
+    }
+}

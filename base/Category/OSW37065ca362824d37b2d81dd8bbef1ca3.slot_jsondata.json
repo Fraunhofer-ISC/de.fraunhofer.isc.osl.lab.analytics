@@ -1,0 +1,36 @@
+{
+    "type": [
+        "Category:OSW417008476ca94a3ebe59846b4e87c3fa"
+    ],
+    "process_list": [
+        {
+            "uuid": "47d1f3c5-6fda-404a-92ad-583629cd48a4",
+            "process_category": "Category:OSW7c7e07b4e6a44158a6243cffa397c86e",
+            "key": "acidic_digestion"
+        },
+        {
+            "uuid": "56f79291-8e04-43b3-8106-66d2d584b6ff",
+            "process_category": "Category:OSWba98920367be47fb8267d2e1d4bd41e5",
+            "key": "icp_oes",
+            "document_separately": true
+        }
+    ],
+    "format": "categories",
+    "subclass_of": [
+        "Category:OSW65f6adea07934d169b769105a4c25458",
+        "Category:OSW4ef92ac53714494da09c377898bf275f"
+    ],
+    "uuid": "37065ca3-6282-4d37-b2d8-1dd8bbef1ca3",
+    "label": [
+        {
+            "text": "ICP determination of multiple oxides",
+            "lang": "en"
+        },
+        {
+            "text": "ICP Bestimmung von mehreren Oxiden",
+            "lang": "de"
+        }
+    ],
+    "description": [],
+    "name": "IcpDeterminationOfMultipleOxides"
+}

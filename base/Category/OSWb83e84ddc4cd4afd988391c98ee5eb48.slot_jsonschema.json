@@ -1,0 +1,40 @@
+{
+    "@context": [
+        "/wiki/Category:OSW4ef92ac53714494da09c377898bf275f?action=raw&slot=jsonschema"
+    ],
+    "allOf": [
+        {
+            "$ref": "/wiki/Category:OSW4ef92ac53714494da09c377898bf275f?action=raw&slot=jsonschema"
+        }
+    ],
+    "type": "object",
+    "uuid": "b83e84dd-c4cd-4afd-9883-91c98ee5eb48",
+    "title": "ElementZusammensetzungsanalyse",
+    "title*": {
+        "de": "Element-Zusammensetzungsanalyse",
+        "en": "Element Fraction Analysis"
+    },
+    "description": "Ein Messprozess, dessen Ergebnis die elementare Zusammensetzung der Proben ergibt",
+    "description*": {
+        "de": "Ein Messprozess, dessen Ergebnis die elementare Zusammensetzung der Proben ergibt",
+        "en": "A measurement proces which has the mass-percentage of elements within its samples as a result."
+    },
+    "required": [
+        "type",
+        "uuid"
+    ],
+    "properties": {
+        "type": {
+            "default": [
+                "Category:OSWb83e84ddc4cd4afd988391c98ee5eb48"
+            ]
+        },
+        "uuid": {
+            "type": "string",
+            "format": "uuid",
+            "options": {
+                "hidden": true
+            }
+        }
+    }
+}

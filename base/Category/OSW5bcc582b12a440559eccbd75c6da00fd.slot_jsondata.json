@@ -1,0 +1,42 @@
+{
+    "type": [
+        "Category:OSWc11438cd6c814ed1a5a253555ee351b4"
+    ],
+    "subclass_of": [
+        "Category:OSWedb9c4ddc1774b11a70866f0ed8f4998",
+        "Category:OSW4ef92ac53714494da09c377898bf275f"
+    ],
+    "uuid": "5bcc582b-12a4-4055-9ecc-bd75c6da00fd",
+    "label": [
+        {
+            "text": "Loss on Ignition Determination",
+            "lang": "en"
+        },
+        {
+            "text": "Ermittlung des Glühverlustes",
+            "lang": "de"
+        }
+    ],
+    "description": [
+        {
+            "text": "Abbrennen einer Probe samt Bestimmung der Massendifferenz.",
+            "lang": "de"
+        },
+        {
+            "text": "Ignition of a sample with determination of mass difference.",
+            "lang": "en"
+        }
+    ],
+    "name": "LossOnIgnitionDetermination",
+    "statements": [
+        {
+            "uuid": "82be0728-6bcb-47bd-a9f9-ed73f85acdcb",
+            "predicate": "Property:IsRelatedTo",
+            "object": "Item:OSW40765ed6644d5aecb27f81d257e091b5",
+            "rdf_type": "rdf:Statement"
+        }
+    ],
+    "attachments": [
+        "File:OSW71e40bf3b0be449b9e5572a6b041ea80.docx"
+    ]
+}

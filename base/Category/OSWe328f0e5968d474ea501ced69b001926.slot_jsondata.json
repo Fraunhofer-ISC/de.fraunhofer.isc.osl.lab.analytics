@@ -1,0 +1,34 @@
+{
+    "subclass_of": [
+        "Category:OSWfe72974590fd4e8ba94cd4e8366375e8"
+    ],
+    "type": [
+        "Category:Category"
+    ],
+    "uuid": "e328f0e5-968d-474e-a501-ced69b001926",
+    "label": [
+        {
+            "text": "OxideFractionAnalysis",
+            "lang": "en"
+        }
+    ],
+    "name": "OxideFractionAnalysis",
+    "statements": [
+        {
+            "uuid": "a62431ec-9045-4c6c-8dc8-4407aca6cf84",
+            "predicate": "Property:IsRelatedTo",
+            "object": "Category:OSW65f58d16280a49ae87de52b706f65d4a",
+            "rdf_type": "rdf:Statement"
+        }
+    ],
+    "description": [
+        {
+            "text": "Analasys of mass fractions of various oxides. Can target parts of a sample or the sample as a whole.",
+            "lang": "en"
+        },
+        {
+            "text": "Analyse der Massenanteile verschiedener Oxide. Kann auf eine ganze oder Teile einer Probe zutreffen.",
+            "lang": "de"
+        }
+    ]
+}

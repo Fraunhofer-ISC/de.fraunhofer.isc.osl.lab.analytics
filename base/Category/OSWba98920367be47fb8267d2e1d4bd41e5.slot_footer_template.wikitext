@@ -1,0 +1,12 @@
+Statements of this Item
+{{#ask: [[-HasStatement::{{FULLPAGENAME}}]]
+    <!--|?HasObject=Substance -->    
+    |?HasSubject
+    |?HasProperty
+    |?HasObject
+    |?HasStatement.HasProperty
+    |?HasStatement.HasObject
+    |?HasStatement.HasUnit
+    |format=datatable
+    |limit=1000
+}}

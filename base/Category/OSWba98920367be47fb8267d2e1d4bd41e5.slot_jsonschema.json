@@ -1,0 +1,48 @@
+{
+    "@context": [
+        "/wiki/Category:OSW4ef92ac53714494da09c377898bf275f?action=raw&slot=jsonschema",
+        "/wiki/Category:OSWb83e84ddc4cd4afd988391c98ee5eb48?action=raw&slot=jsonschema"
+    ],
+    "allOf": [
+        {
+            "$ref": "/wiki/Category:OSWb83e84ddc4cd4afd988391c98ee5eb48?action=raw&slot=jsonschema"
+        }
+    ],
+    "type": "object",
+    "uuid": "ba989203-67be-47fb-8267-d2e1d4bd41e5",
+    "title": "IcpOes",
+    "title*": {
+        "en": "ICP-OES"
+    },
+    "description": "Inductively Coupled Plasma - Optical Emission Spectroscopy",
+    "description*": {
+        "en": "Inductively Coupled Plasma - Optical Emission Spectroscopy",
+        "de": "Optische Emissionsspektrometrie mit induktiv gekoppeltem Plasma"
+    },
+    "required": [
+        "type",
+        "workflow_runs"
+    ],
+    "defaultProperties": [
+        "raw_data"
+    ],
+    "properties": {
+        "type": {
+            "default": [
+                "Category:OSWba98920367be47fb8267d2e1d4bd41e5"
+            ]
+        },
+        "workflow_runs": {
+            "$ref": "/wiki/JsonSchema:PrefectWorkflowRuns?action=raw",
+            "$comment": "ICP Evaluation Flow",
+            "default": {
+                "tool": [
+                    "Item:OSW7934b4963cc75a2eb62a49be3d6f4635"
+                ]
+            },
+            "options": {
+                "collapsed": true
+            }
+        }
+    }
+}

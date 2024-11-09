@@ -1,0 +1,47 @@
+{
+    "@context": [
+        "/wiki/Category:OSW69a417aee9f046a6819f9e95b865e0a6?action=raw&slot=jsonschema"
+    ],
+    "allOf": [
+        {
+            "$ref": "/wiki/Category:OSW69a417aee9f046a6819f9e95b865e0a6?action=raw&slot=jsonschema"
+        }
+    ],
+    "type": "object",
+    "uuid": "b6a227a1-10c5-4a4b-95a9-bfe0c41da102",
+    "title": "CalculationOfSiliconContent",
+    "title*": {
+        "en": "Calculation of Silicon Content",
+        "de": "Berechnung des Siliziumanteils"
+    },
+    "description": "",
+    "description*": {},
+    "required": [
+        "type",
+        "uuid"
+    ],
+    "defaultProperties": [
+        "silicon_mass_fraction_percent"
+    ],
+    "properties": {
+        "type": {
+            "default": [
+                "Category:OSWb6a227a110c54a4b95a9bfe0c41da102"
+            ]
+        },
+        "uuid": {
+            "type": "string",
+            "format": "uuid",
+            "options": {
+                "hidden": true
+            }
+        },
+        "silicon_mass_fraction_percent": {
+            "type": "number",
+            "description": "silicon mass fraction in percent",
+            "description*": {
+                "de": "Silizium Massenanteil in Prozent"
+            }
+        }
+    }
+}

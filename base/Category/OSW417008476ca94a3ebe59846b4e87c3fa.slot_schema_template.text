@@ -1,0 +1,186 @@
+{ 
+    "@context": [
+        {
+        "processes_object":"Property:HasPart"
+        },
+        
+        {{#each process_list}}
+        {
+                "{{{key}}}":{
+                    "@id":"Property:HasPart",
+                    "@type": "@id"
+                }
+        }{{#unless @last}},{{/unless}}
+        {{/each}}
+    ],
+    "required": ["uuid"],
+    "defaultProperties":[
+        "processes_object"
+    ],
+    "format": "",
+    "options": {
+        "remove_empty_properties": true
+    },
+    "properties": { 
+        "uuid": {
+            "type": "string",
+            "format": "uuid",
+            "options": {
+                "hidden": true
+            }
+        },
+        "type": {
+            "options": {
+                "hidden": true
+            }
+        },
+        "label": {
+          "items": {
+            "properties": {
+              "text": {
+                "dynamic_template": "{{label.0.text}} \{{{dateformat 'Y_m_d-H_i_s' (_now_)}}}"
+              }
+            }
+          },
+          "options": {
+            "hidden": true
+          }
+        },
+        "actionees": {
+            "options": {
+                "hidden": true
+            }
+        },
+        "start_date_time": {
+            "options": {
+                "hidden": true
+            }
+        },
+        "projects": {
+            "options": {
+                "hidden": true
+            }
+        },
+        "tool": {
+            "options": {
+                "hidden": true
+            }
+        },
+        "description": {
+            "options": {
+                "hidden": true
+            }
+        },
+        "processes_object": {
+            "title": "Workflow Processes",
+            "title*":{
+                "de": "Workflow Prozesse"
+            },
+            "format": "{{format}}",
+            "type": "object",
+            "defaultProperties":["uuid"{{#each process_list}},
+                "{{{key}}}"
+                {{/each}}
+            ],
+            "required":[
+                "uuid"
+            ],
+            "options": {
+                "remove_empty_properties": true
+            },
+            "properties":{
+                "uuid": {
+                    "type": "string",
+                    "format": "uuid",
+                    "options": {
+                        "hidden": true
+                    }
+                }{{#each process_list}},
+                "{{{key}}}":{{#if document_separately}}{
+                    "type": "object",
+                    "title": "{{@index}}: {{{key}}}",
+                    "defaultProperties":[
+                    "osw_id"
+                    ],
+                    "properties":{
+                        "osw_id": {
+                            "title": "{{@index}}: {{{key}}}",
+                            "type": "string",
+                            "description": "Link to the separately documented process step",
+                            "description*": {
+                                "de": "Link zum separat dokumentierten Prozessschritt"
+                                },
+                            "format": "autocomplete",
+                            "range": "{{{process_category}}}"
+                        }
+                    }
+                }
+                	{{else}}{
+                    "type": "object",
+                    "title": "{{@index}}: {{{key}}}",
+                    "allOf": [
+                        {
+                          "$ref": "/wiki/{{{process_category}}}?action=raw&slot=jsonschema"
+                        }
+                    ],
+                    "options": {
+                        "remove_empty_properties": true
+                    },
+                    "properties":{
+                        "type": {
+                            "options": {
+                                "hidden": true
+                            }
+                        },
+                        "actionees": {
+                            "options": {
+                                "hidden": true
+                            }
+                        },
+                        "start_date_time": {
+                            "options": {
+                                "hidden": true
+                            }
+                        },
+                        "projects": {
+                            "options": {
+                                "hidden": true
+                            }
+                        },
+                        "input": {
+                            "options": {
+                                "hidden": true
+                            }
+                        },
+                        "output": {
+                            "options": {
+                                "hidden": true
+                            }
+                        },
+                        "tool": {
+                            "options": {
+                                "hidden": true
+                            }
+                        },
+                        "label": {
+                            "default": [
+                                {
+                                  "text": "step {{@index}}: {{{key}}}",
+                                  "lang": "en"
+                                }
+                            ],
+                            "options": {
+                                "hidden": true
+                            }
+                        },
+                        "description": {
+                            "options": {
+                                "hidden": true
+                            }
+                        }
+                    }
+                }{{/if}}{{/each}}
+            }
+        }
+    } 
+}

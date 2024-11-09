@@ -1,0 +1,26 @@
+{
+    "subclass_of": [
+        "Category:OSWb83e84ddc4cd4afd988391c98ee5eb48"
+    ],
+    "type": [
+        "Category:Category"
+    ],
+    "uuid": "ba989203-67be-47fb-8267-d2e1d4bd41e5",
+    "label": [
+        {
+            "text": "ICP-OES",
+            "lang": "en"
+        }
+    ],
+    "description": [
+        {
+            "text": "Inductively Coupled Plasma - Optical Emission Spectroscopy",
+            "lang": "en"
+        },
+        {
+            "text": "Optische Emissionsspektrometrie mit induktiv gekoppeltem Plasma",
+            "lang": "de"
+        }
+    ],
+    "name": "IcpOes"
+}

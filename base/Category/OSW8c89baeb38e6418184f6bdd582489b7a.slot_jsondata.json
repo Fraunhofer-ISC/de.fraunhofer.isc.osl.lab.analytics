@@ -1,0 +1,57 @@
+{
+    "type": [
+        "Category:OSW417008476ca94a3ebe59846b4e87c3fa"
+    ],
+    "process_list": [
+        {
+            "uuid": "12836be5-b150-4db6-9f29-8e396c3759c7",
+            "process_category": "Category:OSWf6fa3f8a74c848f1a5d9a5670283159a",
+            "key": "weighing_before_ignition"
+        },
+        {
+            "uuid": "4a514b2f-102a-4477-b20c-31f19b0ab476",
+            "process_category": "Category:OSWf6fa3f8a74c848f1a5d9a5670283159a",
+            "key": "weighing_after_ignition"
+        },
+        {
+            "uuid": "a3a98a13-dcb2-44d4-acb5-43ee44b03838",
+            "process_category": "Category:OSWf6fa3f8a74c848f1a5d9a5670283159a",
+            "key": "weighing_after_HF"
+        },
+        {
+            "uuid": "4b7e6a32-cb67-49c3-960a-702663baa984",
+            "process_category": "Category:OSWb6a227a110c54a4b95a9bfe0c41da102",
+            "key": "calculation_gravimetric_silicon_content"
+        },
+        {
+            "uuid": "3cf50a32-55f1-4224-a6c4-81a461580c07",
+            "process_category": "Category:OSWba98920367be47fb8267d2e1d4bd41e5",
+            "key": "rest_SiO2_ICP",
+            "document_separately": true
+        },
+        {
+            "uuid": "6dbf4619-951f-48da-9667-429bd5bb201b",
+            "process_category": "Category:OSWba98920367be47fb8267d2e1d4bd41e5",
+            "key": "soda_borax_ICP",
+            "document_separately": true
+        }
+    ],
+    "format": "list",
+    "subclass_of": [
+        "Category:OSW65f6adea07934d169b769105a4c25458",
+        "Category:OSW4ef92ac53714494da09c377898bf275f"
+    ],
+    "uuid": "8c89baeb-38e6-4181-84f6-bdd582489b7a",
+    "label": [
+        {
+            "text": "Gravimetric and ICP Determination of Silicon Content",
+            "lang": "en"
+        },
+        {
+            "text": "Gravimetrische und ICP Bestimmung des Siliziumanteils",
+            "lang": "de"
+        }
+    ],
+    "description": [],
+    "name": "GravimetricAndIcpDeterminationOfSiliconContent"
+}

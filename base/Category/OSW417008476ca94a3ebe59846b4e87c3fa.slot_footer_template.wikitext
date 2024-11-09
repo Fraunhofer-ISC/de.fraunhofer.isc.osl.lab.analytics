@@ -1,0 +1,7 @@
+==== Subprozesse des Workflows ====
+{{#ask:
+ [[-HasPart::{{FULLPAGENAME}}]]
+|?HasName=Key of Subprocess
+|?HasType=Type of Subprocess
+|format=datatable
+}}

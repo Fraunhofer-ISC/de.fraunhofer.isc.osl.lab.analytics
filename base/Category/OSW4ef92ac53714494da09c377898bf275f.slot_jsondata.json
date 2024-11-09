@@ -1,0 +1,30 @@
+{
+    "subclass_of": [
+        "Category:OSWe5aa96bffb1c4d95be7fbd46142ad203"
+    ],
+    "type": [
+        "Category:Category"
+    ],
+    "uuid": "4ef92ac5-3714-494d-a09c-377898bf275f",
+    "label": [
+        {
+            "text": "Measurement Process",
+            "lang": "en"
+        },
+        {
+            "text": "Messprozess",
+            "lang": "de"
+        }
+    ],
+    "description": [
+        {
+            "text": "A process in which a property of a sample is determined.",
+            "lang": "en"
+        },
+        {
+            "text": "Ein Prozess, bei dem Eigenschaften einer Probe bestimmt werden.",
+            "lang": "de"
+        }
+    ],
+    "name": "MeasurementProcess"
+}

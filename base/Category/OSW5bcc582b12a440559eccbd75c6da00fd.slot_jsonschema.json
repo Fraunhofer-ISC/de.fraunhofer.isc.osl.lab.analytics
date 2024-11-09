@@ -1,0 +1,253 @@
+{
+    "@context": [
+        "/wiki/Category:OSWedb9c4ddc1774b11a70866f0ed8f4998?action=raw&slot=jsonschema",
+        "/wiki/Category:OSW4ef92ac53714494da09c377898bf275f?action=raw&slot=jsonschema",
+        {
+            "loss_on_ignition_percent": "Property:HasOutput",
+            "used_scale": "Property:HasTool"
+        }
+    ],
+    "allOf": [
+        {
+            "$ref": "/wiki/Category:OSW4ef92ac53714494da09c377898bf275f?action=raw&slot=jsonschema"
+        }
+    ],
+    "type": "object",
+    "uuid": "5bcc582b-12a4-4055-9ecc-bd75c6da00fd",
+    "title": "LossOnIgnitionDetermination",
+    "title*": {
+        "en": "Loss on Ignition Determination",
+        "de": "Ermittlung des Glühverlustes"
+    },
+    "description": "Abbrennen einer Probe samt Bestimmung der Massendifferenz.",
+    "description*": {
+        "de": "Abbrennen einer Probe samt Bestimmung der Massendifferenz.",
+        "en": "Ignition of a sample with determination of mass difference."
+    },
+    "required": [
+        "type",
+        "uuid"
+    ],
+    "defaultProperties": [
+        "ignition_temperature",
+        "ignition_time",
+        "used_scale",
+        "ignition_partial_samples"
+    ],
+    "properties": {
+        "type": {
+            "default": [
+                "Category:OSW5bcc582b12a440559eccbd75c6da00fd"
+            ]
+        },
+        "uuid": {
+            "type": "string",
+            "format": "uuid",
+            "options": {
+                "hidden": true
+            }
+        },
+        "ignition_temperature": {
+            "allOf": [
+                {
+                    "$ref": "/wiki/JsonSchema:QuantityProperty?action=raw"
+                }
+            ],
+            "$comment": "We can overwrite several definitions",
+            "title": "Temperature",
+            "title*": {
+                "de": "Temperatur"
+            },
+            "properties": {
+                "quantity": {
+                    "default": "Property:HasTemperature"
+                },
+                "$comment": {
+                    "unit": {
+                        "default": "Property:HasTemperature#OSW630866e10c9b46f798e62c2258c39be6"
+                    },
+                    "unit_symbol": {
+                        "$comment": "To set a default unit, we need to set both 'unit' and 'unit_symbol'",
+                        "default": "°C"
+                    }
+                }
+            }
+        },
+        "ignition_time": {
+            "allOf": [
+                {
+                    "$ref": "/wiki/JsonSchema:QuantityProperty?action=raw"
+                }
+            ],
+            "$comment": "We can overwrite several definitions",
+            "title": "Time",
+            "title*": {
+                "de": "Zeit"
+            },
+            "properties": {
+                "quantity": {
+                    "default": "Property:HasTime"
+                },
+                "unit": {
+                    "default": "Property:HasTime#OSW4e5cf5f776a24d9c94267e7eb88f643b"
+                },
+                "unit_symbol": {
+                    "$comment": "To set a default unit, we need to set both 'unit' and 'unit_symbol'",
+                    "default": "min"
+                }
+            }
+        },
+        "used_scale": {
+            "type": "string",
+            "title": "Used Scale",
+            "title*": {
+                "de": "Verwendete Waage"
+            },
+            "format": "autocomplete",
+            "range": "Category:OSW7506cc847c8550bbbdba20e9c616cf85"
+        },
+        "ignition_partial_samples": {
+            "title": "Partial Samples",
+            "title*": {
+                "de": "Teilproben"
+            },
+            "type": "array",
+            "format": "tabs",
+            "items": {
+                "title": "Ignition Partial Sample",
+                "title*": {
+                    "de": "Teilprobe"
+                },
+                "defaultProperties": [
+                    "crucible_id",
+                    "empty_crucible_mass",
+                    "sample_initial_weight",
+                    "ignited_crucible_weight",
+                    "ignition_loss_weight",
+                    "loss_on_ignition_percent"
+                ],
+                "properties": {
+                    "crucible_id": {
+                        "type": "string",
+                        "title": "Pt Crucible Nr",
+                        "title*": {
+                            "de": "Pt Schale Nr."
+                        }
+                    },
+                    "empty_crucible_mass": {
+                        "allOf": [
+                            {
+                                "$ref": "/wiki/JsonSchema:QuantityProperty?action=raw"
+                            }
+                        ],
+                        "$comment": "We can overwrite several definitions",
+                        "title": "Empty Crucible Mass",
+                        "title*": {
+                            "de": "Gewicht leere Schale"
+                        },
+                        "properties": {
+                            "quantity": {
+                                "default": "Property:HasMass"
+                            },
+                            "unit": {
+                                "default": "Property:HasMass#OSW2b1a3a39eceb4249b86897def91134dc"
+                            },
+                            "unit_symbol": {
+                                "$comment": "To set a default unit, we need to set both 'unit' and 'unit_symbol'",
+                                "default": "g"
+                            }
+                        }
+                    },
+                    "sample_initial_weight": {
+                        "allOf": [
+                            {
+                                "$ref": "/wiki/JsonSchema:QuantityProperty?action=raw"
+                            }
+                        ],
+                        "$comment": "We can overwrite several definitions",
+                        "title": "Sample Initial Weight",
+                        "title*": {
+                            "de": "Einwaage Probe"
+                        },
+                        "properties": {
+                            "quantity": {
+                                "default": "Property:HasMass"
+                            },
+                            "unit": {
+                                "default": "Property:HasMass#OSW2b1a3a39eceb4249b86897def91134dc"
+                            },
+                            "unit_symbol": {
+                                "$comment": "To set a default unit, we need to set both 'unit' and 'unit_symbol'",
+                                "default": "g"
+                            }
+                        }
+                    },
+                    "ignited_crucible_weight": {
+                        "allOf": [
+                            {
+                                "$ref": "/wiki/JsonSchema:QuantityProperty?action=raw"
+                            }
+                        ],
+                        "$comment": "We can overwrite several definitions",
+                        "title": "Ignited Crucible Weight",
+                        "title*": {
+                            "de": "Gewicht Schale nach Glühen"
+                        },
+                        "properties": {
+                            "quantity": {
+                                "default": "Property:HasMass"
+                            },
+                            "unit": {
+                                "default": "Property:HasMass#OSW2b1a3a39eceb4249b86897def91134dc"
+                            },
+                            "unit_symbol": {
+                                "$comment": "To set a default unit, we need to set both 'unit' and 'unit_symbol'",
+                                "default": "g"
+                            }
+                        }
+                    },
+                    "ignition_loss_weight": {
+                        "allOf": [
+                            {
+                                "$ref": "/wiki/JsonSchema:QuantityProperty?action=raw"
+                            }
+                        ],
+                        "$comment": "We can overwrite several definitions",
+                        "title": "Ignition Weight Loss",
+                        "title*": {
+                            "de": "Gewicht Glühverlust"
+                        },
+                        "properties": {
+                            "quantity": {
+                                "default": "Property:HasMass"
+                            },
+                            "unit": {
+                                "default": "Property:HasMass#OSW2b1a3a39eceb4249b86897def91134dc"
+                            },
+                            "unit_symbol": {
+                                "$comment": "To set a default unit, we need to set both 'unit' and 'unit_symbol'",
+                                "default": "g"
+                            }
+                        }
+                    },
+                    "loss_on_ignition_percent": {
+                        "$comment": "caution, manually defined",
+                        "type": "number",
+                        "title": "Loss on Ignition in % (mass/mass)",
+                        "title*": {
+                            "de": "Massenverlust durch Verbrennung in %"
+                        },
+                        "description": "Needed for Report",
+                        "description*": {
+                            "de": "Wird für Report benötigt"
+                        }
+                    }
+                }
+            },
+            "default": [
+                {},
+                {}
+            ]
+        }
+    }
+}

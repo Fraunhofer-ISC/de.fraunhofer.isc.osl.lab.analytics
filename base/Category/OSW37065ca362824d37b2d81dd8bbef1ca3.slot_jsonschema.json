@@ -1,0 +1,212 @@
+{
+    "@context": [
+        "/wiki/Category:OSW65f6adea07934d169b769105a4c25458?action=raw&slot=jsonschema",
+        "/wiki/Category:OSW4ef92ac53714494da09c377898bf275f?action=raw&slot=jsonschema",
+        {
+            "processes_object": "Property:HasPart"
+        },
+        {
+            "acidic_digestion": {
+                "@id": "Property:HasPart",
+                "@type": "@id"
+            }
+        },
+        {
+            "icp_oes": {
+                "@id": "Property:HasPart",
+                "@type": "@id"
+            }
+        }
+    ],
+    "allOf": [
+        {
+            "$ref": "/wiki/Category:OSW4ef92ac53714494da09c377898bf275f?action=raw&slot=jsonschema"
+        }
+    ],
+    "type": "object",
+    "uuid": "37065ca3-6282-4d37-b2d8-1dd8bbef1ca3",
+    "title": "IcpDeterminationOfMultipleOxides",
+    "title*": {
+        "en": "ICP determination of multiple oxides",
+        "de": "ICP Bestimmung von mehreren Oxiden"
+    },
+    "description": "",
+    "description*": {},
+    "required": [
+        "type",
+        "uuid"
+    ],
+    "properties": {
+        "type": {
+            "default": [
+                "Category:OSW37065ca362824d37b2d81dd8bbef1ca3"
+            ],
+            "options": {
+                "hidden": true
+            }
+        },
+        "uuid": {
+            "type": "string",
+            "format": "uuid",
+            "options": {
+                "hidden": true
+            }
+        },
+        "label": {
+            "items": {
+                "properties": {
+                    "text": {
+                        "dynamic_template": "ICP determination of multiple oxides {{{dateformat 'Y_m_d-H_i_s' (_now_)}}}"
+                    }
+                }
+            },
+            "options": {
+                "hidden": true
+            }
+        },
+        "actionees": {
+            "options": {
+                "hidden": true
+            }
+        },
+        "start_date_time": {
+            "options": {
+                "hidden": true
+            }
+        },
+        "projects": {
+            "options": {
+                "hidden": true
+            }
+        },
+        "tool": {
+            "options": {
+                "hidden": true
+            }
+        },
+        "description": {
+            "options": {
+                "hidden": true
+            }
+        },
+        "processes_object": {
+            "title": "Workflow Processes",
+            "title*": {
+                "de": "Workflow Prozesse"
+            },
+            "format": "categories",
+            "type": "object",
+            "defaultProperties": [
+                "uuid",
+                "acidic_digestion",
+                "icp_oes"
+            ],
+            "required": [
+                "uuid"
+            ],
+            "options": {
+                "remove_empty_properties": true
+            },
+            "properties": {
+                "uuid": {
+                    "type": "string",
+                    "format": "uuid",
+                    "options": {
+                        "hidden": true
+                    }
+                },
+                "acidic_digestion": {
+                    "type": "object",
+                    "title": "0: acidic_digestion",
+                    "allOf": [
+                        {
+                            "$ref": "/wiki/Category:OSW7c7e07b4e6a44158a6243cffa397c86e?action=raw&slot=jsonschema"
+                        }
+                    ],
+                    "options": {
+                        "remove_empty_properties": true
+                    },
+                    "properties": {
+                        "type": {
+                            "options": {
+                                "hidden": true
+                            }
+                        },
+                        "actionees": {
+                            "options": {
+                                "hidden": true
+                            }
+                        },
+                        "start_date_time": {
+                            "options": {
+                                "hidden": true
+                            }
+                        },
+                        "projects": {
+                            "options": {
+                                "hidden": true
+                            }
+                        },
+                        "input": {
+                            "options": {
+                                "hidden": true
+                            }
+                        },
+                        "output": {
+                            "options": {
+                                "hidden": true
+                            }
+                        },
+                        "tool": {
+                            "options": {
+                                "hidden": true
+                            }
+                        },
+                        "label": {
+                            "default": [
+                                {
+                                    "text": "step 0: acidic_digestion",
+                                    "lang": "en"
+                                }
+                            ],
+                            "options": {
+                                "hidden": true
+                            }
+                        },
+                        "description": {
+                            "options": {
+                                "hidden": true
+                            }
+                        }
+                    }
+                },
+                "icp_oes": {
+                    "type": "object",
+                    "title": "1: icp_oes",
+                    "defaultProperties": [
+                        "osw_id"
+                    ],
+                    "properties": {
+                        "osw_id": {
+                            "title": "1: icp_oes",
+                            "type": "string",
+                            "description": "Link to the separately documented process step",
+                            "description*": {
+                                "de": "Link zum separat dokumentierten Prozessschritt"
+                            },
+                            "format": "autocomplete",
+                            "range": "Category:OSWba98920367be47fb8267d2e1d4bd41e5"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "defaultProperties": [
+        "processes_object"
+    ],
+    "format": "",
+    "options": {
+        "remove_empty_properties": true
+    }
+}

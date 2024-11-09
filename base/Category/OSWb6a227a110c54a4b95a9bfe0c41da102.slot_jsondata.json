@@ -1,0 +1,21 @@
+{
+    "type": [
+        "Category:OSWc11438cd6c814ed1a5a253555ee351b4"
+    ],
+    "subclass_of": [
+        "Category:OSW69a417aee9f046a6819f9e95b865e0a6"
+    ],
+    "uuid": "b6a227a1-10c5-4a4b-95a9-bfe0c41da102",
+    "label": [
+        {
+            "text": "Calculation of Silicon Content",
+            "lang": "en"
+        },
+        {
+            "text": "Berechnung des Siliziumanteils",
+            "lang": "de"
+        }
+    ],
+    "description": [],
+    "name": "CalculationOfSiliconContent"
+}

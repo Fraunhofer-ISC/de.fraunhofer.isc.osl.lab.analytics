@@ -1,0 +1,40 @@
+{
+    "@context": [
+        "/wiki/Category:OSWe5aa96bffb1c4d95be7fbd46142ad203?action=raw&slot=jsonschema"
+    ],
+    "allOf": [
+        {
+            "$ref": "/wiki/Category:OSWe5aa96bffb1c4d95be7fbd46142ad203?action=raw&slot=jsonschema"
+        }
+    ],
+    "type": "object",
+    "uuid": "69a417ae-e9f0-46a6-819f-9e95b865e0a6",
+    "title": "EvaluationProcess",
+    "title*": {
+        "en": "Evaluation Process",
+        "de": "Auswerteprozess"
+    },
+    "description": "Ein Prozess, bei dem z.B. physikalische Größen oder Charakteristiken aus anderen Größen berechnet werden.",
+    "description*": {
+        "de": "Ein Prozess, bei dem z.B. physikalische Größen oder Charakteristiken aus anderen Größen berechnet werden.",
+        "en": "A Process in which e.g. physical quantities or characteristics are calculated from other quantities."
+    },
+    "required": [
+        "type",
+        "uuid"
+    ],
+    "properties": {
+        "type": {
+            "default": [
+                "Category:OSW69a417aee9f046a6819f9e95b865e0a6"
+            ]
+        },
+        "uuid": {
+            "type": "string",
+            "format": "uuid",
+            "options": {
+                "hidden": true
+            }
+        }
+    }
+}

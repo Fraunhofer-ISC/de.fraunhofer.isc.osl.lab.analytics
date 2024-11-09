@@ -1,0 +1,30 @@
+{
+    "subclass_of": [
+        "Category:OSWc11438cd6c814ed1a5a253555ee351b4"
+    ],
+    "type": [
+        "Category:Category"
+    ],
+    "uuid": "41700847-6ca9-4a3e-be59-846b4e87c3fa",
+    "label": [
+        {
+            "text": "MetaWorkflow",
+            "lang": "de"
+        },
+        {
+            "text": "MetaWorkflow",
+            "lang": "en"
+        }
+    ],
+    "description": [
+        {
+            "text": "The Meta Category of Workflow",
+            "lang": "en"
+        },
+        {
+            "text": "Die Metakategorie von Workflow",
+            "lang": "de"
+        }
+    ],
+    "name": "MetaWorkflow"
+}

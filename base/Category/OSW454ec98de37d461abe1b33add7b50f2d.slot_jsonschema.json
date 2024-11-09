@@ -1,0 +1,415 @@
+{
+    "@context": [
+        "/wiki/Category:OSW65f6adea07934d169b769105a4c25458?action=raw&slot=jsonschema",
+        {
+            "processes_object": "Property:HasPart"
+        },
+        {
+            "loss_on_ignition": {
+                "@id": "Property:HasPart",
+                "@type": "@id"
+            }
+        },
+        {
+            "milling": {
+                "@id": "Property:HasPart",
+                "@type": "@id"
+            }
+        },
+        {
+            "silicon_determination": {
+                "@id": "Property:HasPart",
+                "@type": "@id"
+            }
+        },
+        {
+            "other_oxides_determination": {
+                "@id": "Property:HasPart",
+                "@type": "@id"
+            }
+        }
+    ],
+    "allOf": [
+        {
+            "$ref": "/wiki/Category:OSW65f6adea07934d169b769105a4c25458?action=raw&slot=jsonschema"
+        }
+    ],
+    "type": "object",
+    "uuid": "454ec98d-e37d-461a-be1b-33add7b50f2d",
+    "title": "IcpOesAnSteinwolle",
+    "title*": {
+        "de": "ICP-OES an Steinwolle",
+        "en": "ICP-OES for Rockwool"
+    },
+    "description": "",
+    "description*": {},
+    "required": [
+        "type",
+        "uuid"
+    ],
+    "properties": {
+        "type": {
+            "default": [
+                "Category:OSW454ec98de37d461abe1b33add7b50f2d"
+            ],
+            "options": {
+                "hidden": true
+            }
+        },
+        "uuid": {
+            "type": "string",
+            "format": "uuid",
+            "options": {
+                "hidden": true
+            }
+        },
+        "label": {
+            "items": {
+                "properties": {
+                    "text": {
+                        "dynamic_template": "ICP-OES an Steinwolle {{{dateformat 'Y_m_d-H_i_s' (_now_)}}}"
+                    }
+                }
+            },
+            "options": {
+                "hidden": true
+            }
+        },
+        "actionees": {
+            "options": {
+                "hidden": true
+            }
+        },
+        "start_date_time": {
+            "options": {
+                "hidden": true
+            }
+        },
+        "projects": {
+            "options": {
+                "hidden": true
+            }
+        },
+        "input": {
+            "options": {
+                "hidden": true
+            }
+        },
+        "output": {
+            "options": {
+                "hidden": true
+            }
+        },
+        "tool": {
+            "options": {
+                "hidden": true
+            }
+        },
+        "description": {
+            "options": {
+                "hidden": true
+            }
+        },
+        "processes_object": {
+            "title": "Workflow Processes",
+            "title*": {
+                "de": "Workflow Prozesse"
+            },
+            "format": "categories",
+            "type": "object",
+            "defaultProperties": [
+                "uuid",
+                "loss_on_ignition",
+                "milling",
+                "silicon_determination",
+                "other_oxides_determination"
+            ],
+            "required": [
+                "uuid"
+            ],
+            "options": {
+                "remove_empty_properties": true
+            },
+            "properties": {
+                "uuid": {
+                    "type": "string",
+                    "format": "uuid",
+                    "options": {
+                        "hidden": true
+                    }
+                },
+                "loss_on_ignition": {
+                    "type": "object",
+                    "title": "0: loss_on_ignition",
+                    "allOf": [
+                        {
+                            "$ref": "/wiki/Category:OSW5bcc582b12a440559eccbd75c6da00fd?action=raw&slot=jsonschema"
+                        }
+                    ],
+                    "format": "",
+                    "options": {
+                        "remove_empty_properties": true
+                    },
+                    "properties": {
+                        "type": {
+                            "options": {
+                                "hidden": true
+                            }
+                        },
+                        "actionees": {
+                            "options": {
+                                "hidden": true
+                            }
+                        },
+                        "start_date_time": {
+                            "options": {
+                                "hidden": true
+                            }
+                        },
+                        "projects": {
+                            "options": {
+                                "hidden": true
+                            }
+                        },
+                        "input": {
+                            "options": {
+                                "hidden": true
+                            }
+                        },
+                        "output": {
+                            "options": {
+                                "hidden": true
+                            }
+                        },
+                        "tool": {
+                            "options": {
+                                "hidden": true
+                            }
+                        },
+                        "label": {
+                            "default": [
+                                {
+                                    "text": "step 0: loss_on_ignition",
+                                    "lang": "en"
+                                }
+                            ],
+                            "options": {
+                                "hidden": true
+                            }
+                        },
+                        "description": {
+                            "options": {
+                                "hidden": true
+                            }
+                        }
+                    }
+                },
+                "milling": {
+                    "type": "object",
+                    "title": "1: milling",
+                    "allOf": [
+                        {
+                            "$ref": "/wiki/Category:OSWa8f0708e996d4a66bc1d6e8c2e27b75c?action=raw&slot=jsonschema"
+                        }
+                    ],
+                    "format": "",
+                    "options": {
+                        "remove_empty_properties": true
+                    },
+                    "properties": {
+                        "type": {
+                            "options": {
+                                "hidden": true
+                            }
+                        },
+                        "actionees": {
+                            "options": {
+                                "hidden": true
+                            }
+                        },
+                        "start_date_time": {
+                            "options": {
+                                "hidden": true
+                            }
+                        },
+                        "projects": {
+                            "options": {
+                                "hidden": true
+                            }
+                        },
+                        "input": {
+                            "options": {
+                                "hidden": true
+                            }
+                        },
+                        "output": {
+                            "options": {
+                                "hidden": true
+                            }
+                        },
+                        "tool": {
+                            "options": {
+                                "hidden": true
+                            }
+                        },
+                        "label": {
+                            "default": [
+                                {
+                                    "text": "step 1: milling",
+                                    "lang": "en"
+                                }
+                            ],
+                            "options": {
+                                "hidden": true
+                            }
+                        },
+                        "description": {
+                            "options": {
+                                "hidden": true
+                            }
+                        }
+                    }
+                },
+                "silicon_determination": {
+                    "type": "object",
+                    "title": "2: silicon_determination",
+                    "allOf": [
+                        {
+                            "$ref": "/wiki/Category:OSW8c89baeb38e6418184f6bdd582489b7a?action=raw&slot=jsonschema"
+                        }
+                    ],
+                    "format": "",
+                    "options": {
+                        "remove_empty_properties": true
+                    },
+                    "properties": {
+                        "type": {
+                            "options": {
+                                "hidden": true
+                            }
+                        },
+                        "actionees": {
+                            "options": {
+                                "hidden": true
+                            }
+                        },
+                        "start_date_time": {
+                            "options": {
+                                "hidden": true
+                            }
+                        },
+                        "projects": {
+                            "options": {
+                                "hidden": true
+                            }
+                        },
+                        "input": {
+                            "options": {
+                                "hidden": true
+                            }
+                        },
+                        "output": {
+                            "options": {
+                                "hidden": true
+                            }
+                        },
+                        "tool": {
+                            "options": {
+                                "hidden": true
+                            }
+                        },
+                        "label": {
+                            "default": [
+                                {
+                                    "text": "step 2: silicon_determination",
+                                    "lang": "en"
+                                }
+                            ],
+                            "options": {
+                                "hidden": true
+                            }
+                        },
+                        "description": {
+                            "options": {
+                                "hidden": true
+                            }
+                        }
+                    }
+                },
+                "other_oxides_determination": {
+                    "type": "object",
+                    "title": "3: other_oxides_determination",
+                    "allOf": [
+                        {
+                            "$ref": "/wiki/Category:OSW37065ca362824d37b2d81dd8bbef1ca3?action=raw&slot=jsonschema"
+                        }
+                    ],
+                    "format": "",
+                    "options": {
+                        "remove_empty_properties": true
+                    },
+                    "properties": {
+                        "type": {
+                            "options": {
+                                "hidden": true
+                            }
+                        },
+                        "actionees": {
+                            "options": {
+                                "hidden": true
+                            }
+                        },
+                        "start_date_time": {
+                            "options": {
+                                "hidden": true
+                            }
+                        },
+                        "projects": {
+                            "options": {
+                                "hidden": true
+                            }
+                        },
+                        "input": {
+                            "options": {
+                                "hidden": true
+                            }
+                        },
+                        "output": {
+                            "options": {
+                                "hidden": true
+                            }
+                        },
+                        "tool": {
+                            "options": {
+                                "hidden": true
+                            }
+                        },
+                        "label": {
+                            "default": [
+                                {
+                                    "text": "step 3: other_oxides_determination",
+                                    "lang": "en"
+                                }
+                            ],
+                            "options": {
+                                "hidden": true
+                            }
+                        },
+                        "description": {
+                            "options": {
+                                "hidden": true
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "defaultProperties": [
+        "processes_object"
+    ],
+    "format": "",
+    "options": {
+        "remove_empty_properties": true
+    }
+}

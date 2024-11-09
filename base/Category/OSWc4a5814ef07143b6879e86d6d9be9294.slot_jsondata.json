@@ -1,0 +1,30 @@
+{
+    "subclass_of": [
+        "Category:OSWb83e84ddc4cd4afd988391c98ee5eb48"
+    ],
+    "type": [
+        "Category:Category"
+    ],
+    "uuid": "c4a5814e-f071-43b6-879e-86d6d9be9294",
+    "label": [
+        {
+            "text": "Röntgenfluoreszenzanalyse (RFA)",
+            "lang": "de"
+        },
+        {
+            "text": "X-ray Fluorescence Analysis (XRF)",
+            "lang": "en"
+        }
+    ],
+    "description": [
+        {
+            "text": "A Process in which Information about the chemical composition of a material is extracted by analyzing characteristic fluorescence spectra excited by x-rays",
+            "lang": "en"
+        },
+        {
+            "text": "Ein Prozess, bei dem Informationen über die chemische Zusammensetzung eines Stoffes gewonnen werden, indem charakteristische Fluoreszensspektren analysiert werden, die durch Röntgenstrahlen angeregt wurden.",
+            "lang": "de"
+        }
+    ],
+    "name": "RoentgenfluoreszenzanalyseRfa"
+}

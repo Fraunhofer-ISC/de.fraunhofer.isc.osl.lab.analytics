@@ -1,0 +1,160 @@
+{
+    "@context": [
+        "/wiki/Category:Category?action=raw&slot=jsonschema",
+        {
+            "process_list": {
+                "@id": "Property:HasPart",
+                "@type": "@id"
+            },
+            "process_category": {
+                "@id": "Property:HasType",
+                "@type": "@id"
+            },
+            "key": "Property:HasName"
+        }
+    ],
+    "allOf": [
+        {
+            "$ref": "/wiki/Category:Category?action=raw&slot=jsonschema"
+        }
+    ],
+    "type": "object",
+    "uuid": "41700847-6ca9-4a3e-be59-846b4e87c3fa",
+    "title": "MetaWorkflow",
+    "title*": {
+        "de": "MetaWorkflow",
+        "en": "MetaWorkflow"
+    },
+    "description": "The Meta Category of Workflow",
+    "description*": {
+        "en": "The Meta Category of Workflow",
+        "de": "Die Metakategorie von Workflow"
+    },
+    "required": [
+        "type"
+    ],
+    "defaultProperties": [
+        "process_list",
+        "format"
+    ],
+    "format": "categories",
+    "properties": {
+        "process_list": {
+            "title": "Process List",
+            "title*": {
+                "de": "Prozessliste"
+            },
+            "type": "array",
+            "format": "tabs",
+            "items": {
+                "title": "Process Step",
+                "title*": {
+                    "de": "Prozessschritt"
+                },
+                "type": "object",
+                "defaultProperties": [
+                    "process_category",
+                    "key"
+                ],
+                "format": "grid-strict",
+                "required": [
+                    "uuid"
+                ],
+                "properties": {
+                    "uuid": {
+                        "title": "UUID",
+                        "type": "string",
+                        "format": "uuid",
+                        "options": {
+                            "hidden": true
+                        }
+                    },
+                    "process_category": {
+                        "title": "Process Category",
+                        "title*": {
+                            "de": "Prozesskategorie"
+                        },
+                        "type": "string",
+                        "subclassof_range": "Category:OSWe5aa96bffb1c4d95be7fbd46142ad203",
+                        "format": "autocomplete",
+                        "options": {
+                            "grid_columns": 6
+                        }
+                    },
+                    "key": {
+                        "type": "string",
+                        "title": "Key",
+                        "title*": {
+                            "de": "Key"
+                        },
+                        "description": "key for accessing information on this process step programmatically. Use snaka case formatting, e.g. my_workflow_step. Must be unique wihtin workflow.",
+                        "description*": {
+                            "de": "Zeichenschlüssel (Key) für Programmatischen Zugriff auf diesen Prozessschritt. Verewenden Sie snake case Formatierung und englische Sprache, z.B. my_workflow_step. Der Schlüssel muss im Workflow eindeutig sein."
+                        },
+                        "options": {
+                            "grid_columns": 4
+                        }
+                    },
+                    "title_en": {
+                        "type": "string",
+                        "title": "Title (en)",
+                        "title*": {
+                            "de": "Title (en)"
+                        },
+                        "description": "Title that is shown in the form with english language settings",
+                        "description*": {
+                            "de": "Titel, der im Formular bei englischen Spracheinstellungen gezeigt wird."
+                        },
+                        "options": {
+                            "grid_columns": 4
+                        }
+                    },
+                    "title_de": {
+                        "type": "string",
+                        "title": "Title (de)",
+                        "title*": {
+                            "de": "Title (de)"
+                        },
+                        "description": "Title that is shown in the form with german language settings",
+                        "description*": {
+                            "de": "Titel, der im Formular bei deutschen Spracheinstellungen gezeigt wird."
+                        },
+                        "options": {
+                            "grid_columns": 4
+                        }
+                    },
+                    "document_separately": {
+                        "type": "boolean",
+                        "title": "Document Separately",
+                        "title*": "Separat Dokumentieren",
+                        "description": "Suggestion: Set to false if only one sample takes part in this process. Set to true if the process documentation has same relevance elsewhere.",
+                        "description*": {
+                            "de": "Empfehlung: Auf false setzen, wenn nur eine Probe am Prozess teilnimmt. Auf true setzen, wenn die Prozessdokumentation auch an anderer Stelle gleich relevant ist."
+                        },
+                        "default": "false"
+                    }
+                }
+            }
+        },
+        "type": {
+            "default": [
+                "Category:OSW417008476ca94a3ebe59846b4e87c3fa"
+            ]
+        },
+        "format": {
+            "type": "string",
+            "title": "Format",
+            "title*": {
+                "de": "Format"
+            },
+            "description": "Format in which the Schemas of the workflow processes shall be displayed.",
+            "description*": {
+                "de": "Format, in dem die Schemata der Workflow Prozesse angezeigt werden sollen."
+            },
+            "enum": [
+                "categories",
+                "list"
+            ]
+        }
+    }
+}

@@ -1,0 +1,41 @@
+{
+    "@context": [
+        "/wiki/Category:OSWe5aa96bffb1c4d95be7fbd46142ad203?action=raw&slot=jsonschema",
+        "/wiki/Category:OSW417008476ca94a3ebe59846b4e87c3fa?action=raw&slot=jsonschema"
+    ],
+    "allOf": [
+        {
+            "$ref": "/wiki/Category:OSWe5aa96bffb1c4d95be7fbd46142ad203?action=raw&slot=jsonschema"
+        }
+    ],
+    "type": "object",
+    "uuid": "65f6adea-0793-4d16-9b76-9105a4c25458",
+    "title": "Workflow",
+    "title*": {
+        "de": "Workflow",
+        "en": "Workflow"
+    },
+    "description": "Eine Aneinanderkettung von Prozessen.",
+    "description*": {
+        "de": "Eine Aneinanderkettung von Prozessen.",
+        "en": "A Chain of Processes."
+    },
+    "required": [
+        "type",
+        "uuid"
+    ],
+    "properties": {
+        "type": {
+            "default": [
+                "Category:OSW65f6adea07934d169b769105a4c25458"
+            ]
+        },
+        "uuid": {
+            "type": "string",
+            "format": "uuid",
+            "options": {
+                "hidden": true
+            }
+        }
+    }
+}

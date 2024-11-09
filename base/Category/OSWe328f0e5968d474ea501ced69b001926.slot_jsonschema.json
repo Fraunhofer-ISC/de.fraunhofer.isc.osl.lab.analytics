@@ -1,0 +1,74 @@
+{
+    "title": "OxideFractionAnalysis",
+    "description": "Analasys of mass fractions of various oxides. Can target parts of a sample or the sample as a whole.",
+    "type": "object",
+    "properties": {
+        "sample_name": {
+            "title": "Sample Name",
+            "type": "string"
+        },
+        "raw_data_path": {
+            "title": "Raw Data Path",
+            "type": "string"
+        },
+        "mass_fractions": {
+            "title": "Mass Fractions",
+            "type": "array",
+            "items": {
+                "$ref": "#/definitions/MassFraction"
+            }
+        },
+        "sum_of_fractions": {
+            "title": "Sum Of Fractions",
+            "type": "number"
+        },
+        "analysis_method": {
+            "description": "a more detailled method type",
+            "type": "string"
+        },
+        "type": {
+            "default": [
+                "Category:OSWe328f0e5968d474ea501ced69b001926"
+            ]
+        }
+    },
+    "required": [
+        "label",
+        "uuid",
+        "sample_name",
+        "mass_fractions",
+        "type"
+    ],
+    "allOf": [
+        {
+            "$ref": "/wiki/Category:OSWfe72974590fd4e8ba94cd4e8366375e8?action=raw&slot=jsonschema"
+        }
+    ],
+    "@context": [
+        "/wiki/Category:OSWfe72974590fd4e8ba94cd4e8366375e8?action=raw&slot=jsonschema",
+        {
+            "analysis_method": "Property:HasMethodName"
+        }
+    ],
+    "definitions": {
+        "MassFraction": {
+            "$ref": "/wiki/Category:OSW65f58d16280a49ae87de52b706f65d4a?action=raw&slot=jsonschema",
+            "defaultProperties": [
+                "material_label",
+                "fraction_percent",
+                "uncertainty_percent",
+                "label",
+                "uuid",
+                "type"
+            ]
+        }
+    },
+    "uuid": "e328f0e5-968d-474e-a501-ced69b001926",
+    "title*": {
+        "en": "OxideFractionAnalysis"
+    },
+    "description*": {
+        "en": "Analasys of mass fractions of various oxides. Can target parts of a sample or the sample as a whole.",
+        "de": "Analyse der Massenanteile verschiedener Oxide. Kann auf eine ganze oder Teile einer Probe zutreffen."
+    }
+}

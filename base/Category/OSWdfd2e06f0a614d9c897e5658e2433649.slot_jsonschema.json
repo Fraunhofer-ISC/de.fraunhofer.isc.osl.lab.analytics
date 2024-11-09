@@ -1,0 +1,67 @@
+{
+    "@context": [
+        "/wiki/Category:OSWe5aa96bffb1c4d95be7fbd46142ad203?action=raw&slot=jsonschema",
+        {
+            "mass": "Property:HasMass"
+        }
+    ],
+    "allOf": [
+        {
+            "$ref": "/wiki/Category:OSWe5aa96bffb1c4d95be7fbd46142ad203?action=raw&slot=jsonschema"
+        }
+    ],
+    "type": "object",
+    "uuid": "dfd2e06f-0a61-4d9c-897e-5658e2433649",
+    "title": "RemovalOfPartialAmount",
+    "title*": {
+        "en": "Removal of Partial Amount",
+        "de": "Einwaage"
+    },
+    "description": "",
+    "description*": {},
+    "required": [
+        "type",
+        "uuid"
+    ],
+    "defaultProperties": [
+        "mass"
+    ],
+    "properties": {
+        "type": {
+            "default": [
+                "Category:OSWdfd2e06f0a614d9c897e5658e2433649"
+            ]
+        },
+        "uuid": {
+            "type": "string",
+            "format": "uuid",
+            "options": {
+                "hidden": true
+            }
+        },
+        "mass": {
+            "allOf": [
+                {
+                    "$ref": "/wiki/JsonSchema:QuantityProperty?action=raw"
+                }
+            ],
+            "$comment": "We can overwrite several definitions",
+            "title": "Mass",
+            "title*": {
+                "de": "Masse"
+            },
+            "properties": {
+                "quantity": {
+                    "default": "Property:HasMass"
+                },
+                "unit": {
+                    "default": "Property:HasMass#OSW2b1a3a39eceb4249b86897def91134dc"
+                },
+                "unit_symbol": {
+                    "$comment": "To set a default unit, we need to set both 'unit' and 'unit_symbol'",
+                    "default": "g"
+                }
+            }
+        }
+    }
+}

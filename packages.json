@@ -1,0 +1,519 @@
+{
+    "publisher": "Fraunhofer-ISC",
+    "publisherURL": "https://github.com/Fraunhofer-ISC/de.fraunhofer.isc.osl.lab.analytics",
+    "author": [
+        "Matthias Albert Popp",
+        "Simon Stier"
+    ],
+    "language": "en",
+    "licenseName": "CC BY-NC 4.0",
+    "packages": {
+        "ISC Lab Analytics": {
+            "globalID": "de.fraunhofer.isc.osl.lab.analytics",
+            "label": "ISC Lab Analytics",
+            "description": "Extends the ISC Package 'de.fraunhofer.isc.osl.lab' with concepts and pages that are specific to the (chemical) analytics.",
+            "version": "0.1.0",
+            "requiredPackages": [
+                "de.fraunhofer.isc.osl.lab"
+            ],
+            "baseURL": "https://raw.githubusercontent.com/Fraunhofer-ISC/de.fraunhofer.isc.osl.lab.analytics/main/base/",
+            "pages": [
+                {
+                    "name": "OSW5000c5d47b2f47648063e0354d9d1199",
+                    "label": "ZaaAcKleinauftrag",
+                    "namespace": "NS_CATEGORY",
+                    "urlPath": "Category/OSW5000c5d47b2f47648063e0354d9d1199.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Category/OSW5000c5d47b2f47648063e0354d9d1199.slot_footer.wikitext"
+                        },
+                        "footer_template": {
+                            "urlPath": "Category/OSW5000c5d47b2f47648063e0354d9d1199.slot_footer_template.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Category/OSW5000c5d47b2f47648063e0354d9d1199.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Category/OSW5000c5d47b2f47648063e0354d9d1199.slot_jsondata.json"
+                        },
+                        "jsonschema": {
+                            "urlPath": "Category/OSW5000c5d47b2f47648063e0354d9d1199.slot_jsonschema.json"
+                        }
+                    }
+                },
+                {
+                    "name": "OSW417008476ca94a3ebe59846b4e87c3fa",
+                    "label": "MetaWorkflow",
+                    "namespace": "NS_CATEGORY",
+                    "urlPath": "Category/OSW417008476ca94a3ebe59846b4e87c3fa.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Category/OSW417008476ca94a3ebe59846b4e87c3fa.slot_footer.wikitext"
+                        },
+                        "footer_template": {
+                            "urlPath": "Category/OSW417008476ca94a3ebe59846b4e87c3fa.slot_footer_template.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Category/OSW417008476ca94a3ebe59846b4e87c3fa.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Category/OSW417008476ca94a3ebe59846b4e87c3fa.slot_jsondata.json"
+                        },
+                        "jsonschema": {
+                            "urlPath": "Category/OSW417008476ca94a3ebe59846b4e87c3fa.slot_jsonschema.json"
+                        },
+                        "schema_template": {
+                            "urlPath": "Category/OSW417008476ca94a3ebe59846b4e87c3fa.slot_schema_template.text"
+                        }
+                    }
+                },
+                {
+                    "name": "OSW65f6adea07934d169b769105a4c25458",
+                    "label": "Workflow",
+                    "namespace": "NS_CATEGORY",
+                    "urlPath": "Category/OSW65f6adea07934d169b769105a4c25458.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Category/OSW65f6adea07934d169b769105a4c25458.slot_footer.wikitext"
+                        },
+                        "footer_template": {
+                            "urlPath": "Category/OSW65f6adea07934d169b769105a4c25458.slot_footer_template.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Category/OSW65f6adea07934d169b769105a4c25458.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Category/OSW65f6adea07934d169b769105a4c25458.slot_jsondata.json"
+                        },
+                        "jsonschema": {
+                            "urlPath": "Category/OSW65f6adea07934d169b769105a4c25458.slot_jsonschema.json"
+                        }
+                    }
+                },
+                {
+                    "name": "OSWba98920367be47fb8267d2e1d4bd41e5",
+                    "label": "IcpOes",
+                    "namespace": "NS_CATEGORY",
+                    "urlPath": "Category/OSWba98920367be47fb8267d2e1d4bd41e5.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Category/OSWba98920367be47fb8267d2e1d4bd41e5.slot_footer.wikitext"
+                        },
+                        "footer_template": {
+                            "urlPath": "Category/OSWba98920367be47fb8267d2e1d4bd41e5.slot_footer_template.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Category/OSWba98920367be47fb8267d2e1d4bd41e5.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Category/OSWba98920367be47fb8267d2e1d4bd41e5.slot_jsondata.json"
+                        },
+                        "jsonschema": {
+                            "urlPath": "Category/OSWba98920367be47fb8267d2e1d4bd41e5.slot_jsonschema.json"
+                        }
+                    }
+                },
+                {
+                    "name": "OSW93cdd2f874774ab3ade44427cb60f286",
+                    "label": "IcpOesAnGlaswolle",
+                    "namespace": "NS_CATEGORY",
+                    "urlPath": "Category/OSW93cdd2f874774ab3ade44427cb60f286.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Category/OSW93cdd2f874774ab3ade44427cb60f286.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Category/OSW93cdd2f874774ab3ade44427cb60f286.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Category/OSW93cdd2f874774ab3ade44427cb60f286.slot_jsondata.json"
+                        },
+                        "jsonschema": {
+                            "urlPath": "Category/OSW93cdd2f874774ab3ade44427cb60f286.slot_jsonschema.json"
+                        }
+                    }
+                },
+                {
+                    "name": "OSW454ec98de37d461abe1b33add7b50f2d",
+                    "label": "IcpOesAnSteinwolle",
+                    "namespace": "NS_CATEGORY",
+                    "urlPath": "Category/OSW454ec98de37d461abe1b33add7b50f2d.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Category/OSW454ec98de37d461abe1b33add7b50f2d.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Category/OSW454ec98de37d461abe1b33add7b50f2d.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Category/OSW454ec98de37d461abe1b33add7b50f2d.slot_jsondata.json"
+                        },
+                        "jsonschema": {
+                            "urlPath": "Category/OSW454ec98de37d461abe1b33add7b50f2d.slot_jsonschema.json"
+                        }
+                    }
+                },
+                {
+                    "name": "OSWe328f0e5968d474ea501ced69b001926",
+                    "label": "OxideFractionAnalysis",
+                    "namespace": "NS_CATEGORY",
+                    "urlPath": "Category/OSWe328f0e5968d474ea501ced69b001926.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Category/OSWe328f0e5968d474ea501ced69b001926.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Category/OSWe328f0e5968d474ea501ced69b001926.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Category/OSWe328f0e5968d474ea501ced69b001926.slot_jsondata.json"
+                        },
+                        "jsonschema": {
+                            "urlPath": "Category/OSWe328f0e5968d474ea501ced69b001926.slot_jsonschema.json"
+                        }
+                    }
+                },
+                {
+                    "name": "OSWc4a5814ef07143b6879e86d6d9be9294",
+                    "label": "RoentgenfluoreszenzanalyseRfa",
+                    "namespace": "NS_CATEGORY",
+                    "urlPath": "Category/OSWc4a5814ef07143b6879e86d6d9be9294.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Category/OSWc4a5814ef07143b6879e86d6d9be9294.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Category/OSWc4a5814ef07143b6879e86d6d9be9294.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Category/OSWc4a5814ef07143b6879e86d6d9be9294.slot_jsondata.json"
+                        },
+                        "jsonschema": {
+                            "urlPath": "Category/OSWc4a5814ef07143b6879e86d6d9be9294.slot_jsonschema.json"
+                        }
+                    }
+                },
+                {
+                    "name": "OSWedb9c4ddc1774b11a70866f0ed8f4998",
+                    "label": "SamplePreparationProcess",
+                    "namespace": "NS_CATEGORY",
+                    "urlPath": "Category/OSWedb9c4ddc1774b11a70866f0ed8f4998.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Category/OSWedb9c4ddc1774b11a70866f0ed8f4998.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Category/OSWedb9c4ddc1774b11a70866f0ed8f4998.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Category/OSWedb9c4ddc1774b11a70866f0ed8f4998.slot_jsondata.json"
+                        },
+                        "jsonschema": {
+                            "urlPath": "Category/OSWedb9c4ddc1774b11a70866f0ed8f4998.slot_jsonschema.json"
+                        }
+                    }
+                },
+                {
+                    "name": "OSWbb4dcf3518204aacaf5b2e49d38289fb",
+                    "label": "ChemicalDigestionForIcp",
+                    "namespace": "NS_CATEGORY",
+                    "urlPath": "Category/OSWbb4dcf3518204aacaf5b2e49d38289fb.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Category/OSWbb4dcf3518204aacaf5b2e49d38289fb.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Category/OSWbb4dcf3518204aacaf5b2e49d38289fb.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Category/OSWbb4dcf3518204aacaf5b2e49d38289fb.slot_jsondata.json"
+                        },
+                        "jsonschema": {
+                            "urlPath": "Category/OSWbb4dcf3518204aacaf5b2e49d38289fb.slot_jsonschema.json"
+                        }
+                    }
+                },
+                {
+                    "name": "OSW7c7e07b4e6a44158a6243cffa397c86e",
+                    "label": "HfHclo4Digestion",
+                    "namespace": "NS_CATEGORY",
+                    "urlPath": "Category/OSW7c7e07b4e6a44158a6243cffa397c86e.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Category/OSW7c7e07b4e6a44158a6243cffa397c86e.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Category/OSW7c7e07b4e6a44158a6243cffa397c86e.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Category/OSW7c7e07b4e6a44158a6243cffa397c86e.slot_jsondata.json"
+                        },
+                        "jsonschema": {
+                            "urlPath": "Category/OSW7c7e07b4e6a44158a6243cffa397c86e.slot_jsonschema.json"
+                        }
+                    }
+                },
+                {
+                    "name": "OSW883248f0a6424d90a5dd5f14a94ad7eb",
+                    "label": "Na2co3DigestionForB2o3",
+                    "namespace": "NS_CATEGORY",
+                    "urlPath": "Category/OSW883248f0a6424d90a5dd5f14a94ad7eb.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Category/OSW883248f0a6424d90a5dd5f14a94ad7eb.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Category/OSW883248f0a6424d90a5dd5f14a94ad7eb.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Category/OSW883248f0a6424d90a5dd5f14a94ad7eb.slot_jsondata.json"
+                        },
+                        "jsonschema": {
+                            "urlPath": "Category/OSW883248f0a6424d90a5dd5f14a94ad7eb.slot_jsonschema.json"
+                        }
+                    }
+                },
+                {
+                    "name": "OSW5bcc582b12a440559eccbd75c6da00fd",
+                    "label": "LossOnIgnitionDetermination",
+                    "namespace": "NS_CATEGORY",
+                    "urlPath": "Category/OSW5bcc582b12a440559eccbd75c6da00fd.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Category/OSW5bcc582b12a440559eccbd75c6da00fd.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Category/OSW5bcc582b12a440559eccbd75c6da00fd.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Category/OSW5bcc582b12a440559eccbd75c6da00fd.slot_jsondata.json"
+                        },
+                        "jsonschema": {
+                            "urlPath": "Category/OSW5bcc582b12a440559eccbd75c6da00fd.slot_jsonschema.json"
+                        }
+                    }
+                },
+                {
+                    "name": "OSW8c89baeb38e6418184f6bdd582489b7a",
+                    "label": "GravimetricAndIcpDeterminationOfSiliconContent",
+                    "namespace": "NS_CATEGORY",
+                    "urlPath": "Category/OSW8c89baeb38e6418184f6bdd582489b7a.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Category/OSW8c89baeb38e6418184f6bdd582489b7a.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Category/OSW8c89baeb38e6418184f6bdd582489b7a.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Category/OSW8c89baeb38e6418184f6bdd582489b7a.slot_jsondata.json"
+                        },
+                        "jsonschema": {
+                            "urlPath": "Category/OSW8c89baeb38e6418184f6bdd582489b7a.slot_jsonschema.json"
+                        }
+                    }
+                },
+                {
+                    "name": "OSW65f58d16280a49ae87de52b706f65d4a",
+                    "label": "MassFraction",
+                    "namespace": "NS_CATEGORY",
+                    "urlPath": "Category/OSW65f58d16280a49ae87de52b706f65d4a.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Category/OSW65f58d16280a49ae87de52b706f65d4a.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Category/OSW65f58d16280a49ae87de52b706f65d4a.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Category/OSW65f58d16280a49ae87de52b706f65d4a.slot_jsondata.json"
+                        },
+                        "jsonschema": {
+                            "urlPath": "Category/OSW65f58d16280a49ae87de52b706f65d4a.slot_jsonschema.json"
+                        }
+                    }
+                },
+                {
+                    "name": "OSWdfd2e06f0a614d9c897e5658e2433649",
+                    "label": "RemovalOfPartialAmount",
+                    "namespace": "NS_CATEGORY",
+                    "urlPath": "Category/OSWdfd2e06f0a614d9c897e5658e2433649.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Category/OSWdfd2e06f0a614d9c897e5658e2433649.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Category/OSWdfd2e06f0a614d9c897e5658e2433649.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Category/OSWdfd2e06f0a614d9c897e5658e2433649.slot_jsondata.json"
+                        },
+                        "jsonschema": {
+                            "urlPath": "Category/OSWdfd2e06f0a614d9c897e5658e2433649.slot_jsonschema.json"
+                        }
+                    }
+                },
+                {
+                    "name": "OSW37065ca362824d37b2d81dd8bbef1ca3",
+                    "label": "IcpDeterminationOfMultipleOxides",
+                    "namespace": "NS_CATEGORY",
+                    "urlPath": "Category/OSW37065ca362824d37b2d81dd8bbef1ca3.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Category/OSW37065ca362824d37b2d81dd8bbef1ca3.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Category/OSW37065ca362824d37b2d81dd8bbef1ca3.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Category/OSW37065ca362824d37b2d81dd8bbef1ca3.slot_jsondata.json"
+                        },
+                        "jsonschema": {
+                            "urlPath": "Category/OSW37065ca362824d37b2d81dd8bbef1ca3.slot_jsonschema.json"
+                        }
+                    }
+                },
+                {
+                    "name": "OSW4ef92ac53714494da09c377898bf275f",
+                    "label": "MeasurementProcess",
+                    "namespace": "NS_CATEGORY",
+                    "urlPath": "Category/OSW4ef92ac53714494da09c377898bf275f.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Category/OSW4ef92ac53714494da09c377898bf275f.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Category/OSW4ef92ac53714494da09c377898bf275f.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Category/OSW4ef92ac53714494da09c377898bf275f.slot_jsondata.json"
+                        },
+                        "jsonschema": {
+                            "urlPath": "Category/OSW4ef92ac53714494da09c377898bf275f.slot_jsonschema.json"
+                        }
+                    }
+                },
+                {
+                    "name": "OSWb83e84ddc4cd4afd988391c98ee5eb48",
+                    "label": "ElementZusammensetzungsanalyse",
+                    "namespace": "NS_CATEGORY",
+                    "urlPath": "Category/OSWb83e84ddc4cd4afd988391c98ee5eb48.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Category/OSWb83e84ddc4cd4afd988391c98ee5eb48.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Category/OSWb83e84ddc4cd4afd988391c98ee5eb48.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Category/OSWb83e84ddc4cd4afd988391c98ee5eb48.slot_jsondata.json"
+                        },
+                        "jsonschema": {
+                            "urlPath": "Category/OSWb83e84ddc4cd4afd988391c98ee5eb48.slot_jsonschema.json"
+                        }
+                    }
+                },
+                {
+                    "name": "OSWf6fa3f8a74c848f1a5d9a5670283159a",
+                    "label": "Weighing",
+                    "namespace": "NS_CATEGORY",
+                    "urlPath": "Category/OSWf6fa3f8a74c848f1a5d9a5670283159a.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Category/OSWf6fa3f8a74c848f1a5d9a5670283159a.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Category/OSWf6fa3f8a74c848f1a5d9a5670283159a.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Category/OSWf6fa3f8a74c848f1a5d9a5670283159a.slot_jsondata.json"
+                        },
+                        "jsonschema": {
+                            "urlPath": "Category/OSWf6fa3f8a74c848f1a5d9a5670283159a.slot_jsonschema.json"
+                        }
+                    }
+                },
+                {
+                    "name": "OSW417f0e6df8bb4eb9bd6727fafdddc633",
+                    "label": "IcpDeterminationOfBoronContent",
+                    "namespace": "NS_CATEGORY",
+                    "urlPath": "Category/OSW417f0e6df8bb4eb9bd6727fafdddc633.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Category/OSW417f0e6df8bb4eb9bd6727fafdddc633.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Category/OSW417f0e6df8bb4eb9bd6727fafdddc633.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Category/OSW417f0e6df8bb4eb9bd6727fafdddc633.slot_jsondata.json"
+                        },
+                        "jsonschema": {
+                            "urlPath": "Category/OSW417f0e6df8bb4eb9bd6727fafdddc633.slot_jsonschema.json"
+                        }
+                    }
+                },
+                {
+                    "name": "OSWa8f0708e996d4a66bc1d6e8c2e27b75c",
+                    "label": "MillingInAgateMill",
+                    "namespace": "NS_CATEGORY",
+                    "urlPath": "Category/OSWa8f0708e996d4a66bc1d6e8c2e27b75c.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Category/OSWa8f0708e996d4a66bc1d6e8c2e27b75c.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Category/OSWa8f0708e996d4a66bc1d6e8c2e27b75c.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Category/OSWa8f0708e996d4a66bc1d6e8c2e27b75c.slot_jsondata.json"
+                        },
+                        "jsonschema": {
+                            "urlPath": "Category/OSWa8f0708e996d4a66bc1d6e8c2e27b75c.slot_jsonschema.json"
+                        }
+                    }
+                },
+                {
+                    "name": "OSW69a417aee9f046a6819f9e95b865e0a6",
+                    "label": "EvaluationProcess",
+                    "namespace": "NS_CATEGORY",
+                    "urlPath": "Category/OSW69a417aee9f046a6819f9e95b865e0a6.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Category/OSW69a417aee9f046a6819f9e95b865e0a6.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Category/OSW69a417aee9f046a6819f9e95b865e0a6.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Category/OSW69a417aee9f046a6819f9e95b865e0a6.slot_jsondata.json"
+                        },
+                        "jsonschema": {
+                            "urlPath": "Category/OSW69a417aee9f046a6819f9e95b865e0a6.slot_jsonschema.json"
+                        }
+                    }
+                },
+                {
+                    "name": "OSWb6a227a110c54a4b95a9bfe0c41da102",
+                    "label": "CalculationOfSiliconContent",
+                    "namespace": "NS_CATEGORY",
+                    "urlPath": "Category/OSWb6a227a110c54a4b95a9bfe0c41da102.slot_main.wikitext",
+                    "slots": {
+                        "footer": {
+                            "urlPath": "Category/OSWb6a227a110c54a4b95a9bfe0c41da102.slot_footer.wikitext"
+                        },
+                        "header": {
+                            "urlPath": "Category/OSWb6a227a110c54a4b95a9bfe0c41da102.slot_header.wikitext"
+                        },
+                        "jsondata": {
+                            "urlPath": "Category/OSWb6a227a110c54a4b95a9bfe0c41da102.slot_jsondata.json"
+                        },
+                        "jsonschema": {
+                            "urlPath": "Category/OSWb6a227a110c54a4b95a9bfe0c41da102.slot_jsonschema.json"
+                        }
+                    }
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,49 @@
+{
+    "type": [
+        "Category:OSW417008476ca94a3ebe59846b4e87c3fa"
+    ],
+    "process_list": [
+        {
+            "uuid": "7d725131-eb57-40a7-893e-9a64e66d39dc",
+            "process_category": "Category:OSW5bcc582b12a440559eccbd75c6da00fd",
+            "key": "loss_on_ignition"
+        },
+        {
+            "uuid": "539d8a00-fafe-4e6b-9cd6-1e74699ad189",
+            "process_category": "Category:OSWa8f0708e996d4a66bc1d6e8c2e27b75c",
+            "key": "milling"
+        },
+        {
+            "uuid": "463fe230-3264-412e-8c8a-59af8149f7bb",
+            "process_category": "Category:OSW8c89baeb38e6418184f6bdd582489b7a",
+            "key": "silicon_determination"
+        },
+        {
+            "uuid": "7805a3ec-6246-4a54-811f-04ff12eb51bc",
+            "process_category": "Category:OSW417f0e6df8bb4eb9bd6727fafdddc633",
+            "key": "boron_determination"
+        },
+        {
+            "uuid": "07036f36-a862-41a3-b539-204e16d81246",
+            "process_category": "Category:OSW37065ca362824d37b2d81dd8bbef1ca3",
+            "key": "multiple_oxides_determination"
+        }
+    ],
+    "format": "categories",
+    "subclass_of": [
+        "Category:OSW65f6adea07934d169b769105a4c25458"
+    ],
+    "uuid": "93cdd2f8-7477-4ab3-ade4-4427cb60f286",
+    "label": [
+        {
+            "text": "ICP-OES an Glaswolle",
+            "lang": "de"
+        },
+        {
+            "text": "ICP-OES for Glasswool",
+            "lang": "en"
+        }
+    ],
+    "description": [],
+    "name": "IcpOesAnGlaswolle"
+}

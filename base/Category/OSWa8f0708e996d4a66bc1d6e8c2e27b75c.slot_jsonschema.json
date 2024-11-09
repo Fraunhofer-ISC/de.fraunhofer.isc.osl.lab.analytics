@@ -1,0 +1,40 @@
+{
+    "@context": [
+        "/wiki/Category:OSWedb9c4ddc1774b11a70866f0ed8f4998?action=raw&slot=jsonschema"
+    ],
+    "allOf": [
+        {
+            "$ref": "/wiki/Category:OSWedb9c4ddc1774b11a70866f0ed8f4998?action=raw&slot=jsonschema"
+        }
+    ],
+    "type": "object",
+    "uuid": "a8f0708e-996d-4a66-bc1d-6e8c2e27b75c",
+    "title": "MillingInAgateMill",
+    "title*": {
+        "en": "Milling in Agate Mill",
+        "de": "Mahlen in Achatmühle"
+    },
+    "description": "Bei Bedarf Eigenschaften wählen, z.B. Bild.",
+    "description*": {
+        "de": "Bei Bedarf Eigenschaften wählen, z.B. Bild.",
+        "en": "If necessary choose properties, e.g. image."
+    },
+    "required": [
+        "type",
+        "uuid"
+    ],
+    "properties": {
+        "type": {
+            "default": [
+                "Category:OSWa8f0708e996d4a66bc1d6e8c2e27b75c"
+            ]
+        },
+        "uuid": {
+            "type": "string",
+            "format": "uuid",
+            "options": {
+                "hidden": true
+            }
+        }
+    }
+}

@@ -1,0 +1,30 @@
+{
+    "type": [
+        "Category:OSWc11438cd6c814ed1a5a253555ee351b4"
+    ],
+    "subclass_of": [
+        "Category:OSWedb9c4ddc1774b11a70866f0ed8f4998"
+    ],
+    "uuid": "a8f0708e-996d-4a66-bc1d-6e8c2e27b75c",
+    "label": [
+        {
+            "text": "Milling in Agate Mill",
+            "lang": "en"
+        },
+        {
+            "text": "Mahlen in Achatmühle",
+            "lang": "de"
+        }
+    ],
+    "description": [
+        {
+            "text": "Bei Bedarf Eigenschaften wählen, z.B. Bild.",
+            "lang": "de"
+        },
+        {
+            "text": "If necessary choose properties, e.g. image.",
+            "lang": "en"
+        }
+    ],
+    "name": "MillingInAgateMill"
+}

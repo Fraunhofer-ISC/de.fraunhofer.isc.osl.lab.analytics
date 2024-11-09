@@ -1,0 +1,37 @@
+{
+    "@context": [
+        "/wiki/Category:OSWbb4dcf3518204aacaf5b2e49d38289fb?action=raw&slot=jsonschema"
+    ],
+    "allOf": [
+        {
+            "$ref": "/wiki/Category:OSWbb4dcf3518204aacaf5b2e49d38289fb?action=raw&slot=jsonschema"
+        }
+    ],
+    "type": "object",
+    "uuid": "883248f0-a642-4d90-a5dd-5f14a94ad7eb",
+    "title": "Na2co3DigestionForB2o3",
+    "title*": {
+        "en": "Na2CO3 Digestion for B2O3",
+        "de": "Na2CO3 Aufschluss für B2O3"
+    },
+    "description": "",
+    "description*": {},
+    "required": [
+        "type",
+        "uuid"
+    ],
+    "properties": {
+        "type": {
+            "default": [
+                "Category:OSW883248f0a6424d90a5dd5f14a94ad7eb"
+            ]
+        },
+        "uuid": {
+            "type": "string",
+            "format": "uuid",
+            "options": {
+                "hidden": true
+            }
+        }
+    }
+}

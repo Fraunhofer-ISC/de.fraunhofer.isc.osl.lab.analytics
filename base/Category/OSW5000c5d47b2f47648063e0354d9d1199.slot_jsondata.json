@@ -1,0 +1,30 @@
+{
+    "type": [
+        "Category:OSWc11438cd6c814ed1a5a253555ee351b4"
+    ],
+    "subclass_of": [
+        "Category:OSWd29aa2537f434fbe87c74ded34ee34cb"
+    ],
+    "uuid": "5000c5d4-7b2f-4764-8063-e0354d9d1199",
+    "label": [
+        {
+            "text": "ZAA AC Kleinauftrag",
+            "lang": "de"
+        },
+        {
+            "text": "ZAA AC Order",
+            "lang": "en"
+        }
+    ],
+    "description": [
+        {
+            "text": "Ein Kleinauftrag an die Abteilung Anorganische Chemie des Zentrums für Angewandte Analytik.",
+            "lang": "de"
+        },
+        {
+            "text": "An order to the anorganic chemistry group of the center for applied analytics.",
+            "lang": "en"
+        }
+    ],
+    "name": "ZaaAcKleinauftrag"
+}

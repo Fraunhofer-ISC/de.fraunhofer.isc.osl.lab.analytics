@@ -1,0 +1,42 @@
+{
+    "title": "MassFraction",
+    "description": "",
+    "type": "object",
+    "properties": {
+        "material_label": {
+            "title": "Material Label",
+            "type": "string"
+        },
+        "fraction_percent": {
+            "title": "Fraction Percent",
+            "type": "number"
+        },
+        "uncertainty_percent": {
+            "title": "Uncertainty Percent",
+            "type": "number"
+        },
+        "type": {
+            "default": [
+                "Category:OSW65f58d16280a49ae87de52b706f65d4a"
+            ]
+        }
+    },
+    "required": [
+        "material_label",
+        "fraction_percent",
+        "type"
+    ],
+    "allOf": [
+        {
+            "$ref": "/wiki/Category:OSWfe72974590fd4e8ba94cd4e8366375e8?action=raw&slot=jsonschema"
+        }
+    ],
+    "@context": [
+        "/wiki/Category:OSWfe72974590fd4e8ba94cd4e8366375e8?action=raw&slot=jsonschema"
+    ],
+    "uuid": "65f58d16-280a-49ae-87de-52b706f65d4a",
+    "title*": {
+        "en": "MassFraction"
+    },
+    "description*": {}
+}
