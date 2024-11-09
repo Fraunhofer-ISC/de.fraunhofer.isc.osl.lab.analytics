@@ -1,0 +1,9 @@
+== Teilergebnisse aus diesem Workflow == 
+{{#ask: [[HasSubject.-HasInput::{{FULLPAGENAME}}]] <!-- Statements über die Probe-->
+|?=Ergebnis
+|?HasSubject=Probe
+|?-HasStatement=Messprozess
+|?HasObject = Datenobjekt
+|?HasObject.HasImage=Teilanalyse
+|?-HasStatement.HasImage = Gesamtanalyse
+}}

@@ -45,10 +45,7 @@
         }
     ],
     "@context": [
-        "/wiki/Category:OSWfe72974590fd4e8ba94cd4e8366375e8?action=raw&slot=jsonschema",
-        {
-            "analysis_method": "Property:HasMethodName"
-        }
+        "/wiki/Category:OSWfe72974590fd4e8ba94cd4e8366375e8?action=raw&slot=jsonschema"
     ],
     "definitions": {
         "MassFraction": {

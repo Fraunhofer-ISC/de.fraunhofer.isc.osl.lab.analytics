@@ -11,19 +11,23 @@
                 "@type": "@id"
             },
             "key": "Property:HasName"
-        }
+        },
+        "/wiki/Category:OSWc11438cd6c814ed1a5a253555ee351b4?action=raw&slot=jsonschema"
     ],
     "allOf": [
         {
             "$ref": "/wiki/Category:Category?action=raw&slot=jsonschema"
+        },
+        {
+            "$ref": "/wiki/Category:OSWc11438cd6c814ed1a5a253555ee351b4?action=raw&slot=jsonschema"
         }
     ],
     "type": "object",
     "uuid": "41700847-6ca9-4a3e-be59-846b4e87c3fa",
     "title": "MetaWorkflow",
     "title*": {
-        "de": "MetaWorkflow",
-        "en": "MetaWorkflow"
+        "de": "Workflow Typ",
+        "en": "Workflow Type"
     },
     "description": "The Meta Category of Workflow",
     "description*": {

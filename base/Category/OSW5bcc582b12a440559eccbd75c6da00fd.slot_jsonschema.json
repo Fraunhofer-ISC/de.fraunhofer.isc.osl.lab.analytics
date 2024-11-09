@@ -60,16 +60,17 @@
             },
             "properties": {
                 "quantity": {
-                    "default": "Property:HasTemperature"
+                    "default": "Property:HasTemperature",
+                    "readonly": true
                 },
-                "$comment": {
-                    "unit": {
-                        "default": "Property:HasTemperature#OSW630866e10c9b46f798e62c2258c39be6"
-                    },
-                    "unit_symbol": {
-                        "$comment": "To set a default unit, we need to set both 'unit' and 'unit_symbol'",
-                        "default": "°C"
-                    }
+                "unit": {
+                    "default": "Property:HasTemperature#OSW630866e10c9b46f798e62c2258c39be6",
+                    "readonly": true
+                },
+                "unit_symbol": {
+                    "$comment": "To set a default unit, we need to set both 'unit' and 'unit_symbol'",
+                    "default": "°C",
+                    "readonly": true
                 }
             }
         },
@@ -86,14 +87,17 @@
             },
             "properties": {
                 "quantity": {
-                    "default": "Property:HasTime"
+                    "default": "Property:HasTime",
+                    "readonly": true
                 },
                 "unit": {
-                    "default": "Property:HasTime#OSW4e5cf5f776a24d9c94267e7eb88f643b"
+                    "default": "Property:HasTime#OSW4e5cf5f776a24d9c94267e7eb88f643b",
+                    "readonly": true
                 },
                 "unit_symbol": {
                     "$comment": "To set a default unit, we need to set both 'unit' and 'unit_symbol'",
-                    "default": "min"
+                    "default": "min",
+                    "readonly": true
                 }
             }
         },
@@ -147,14 +151,17 @@
                         },
                         "properties": {
                             "quantity": {
-                                "default": "Property:HasMass"
+                                "default": "Property:HasMass",
+                                "readonly": true
                             },
                             "unit": {
-                                "default": "Property:HasMass#OSW2b1a3a39eceb4249b86897def91134dc"
+                                "default": "Property:HasMass#OSW2b1a3a39eceb4249b86897def91134dc",
+                                "readonly": true
                             },
                             "unit_symbol": {
                                 "$comment": "To set a default unit, we need to set both 'unit' and 'unit_symbol'",
-                                "default": "g"
+                                "default": "g",
+                                "readonly": true
                             }
                         }
                     },
@@ -171,14 +178,17 @@
                         },
                         "properties": {
                             "quantity": {
-                                "default": "Property:HasMass"
+                                "default": "Property:HasMass",
+                                "readonly": true
                             },
                             "unit": {
-                                "default": "Property:HasMass#OSW2b1a3a39eceb4249b86897def91134dc"
+                                "default": "Property:HasMass#OSW2b1a3a39eceb4249b86897def91134dc",
+                                "readonly": true
                             },
                             "unit_symbol": {
                                 "$comment": "To set a default unit, we need to set both 'unit' and 'unit_symbol'",
-                                "default": "g"
+                                "default": "g",
+                                "readonly": true
                             }
                         }
                     },
@@ -195,14 +205,17 @@
                         },
                         "properties": {
                             "quantity": {
-                                "default": "Property:HasMass"
+                                "default": "Property:HasMass",
+                                "readonly": true
                             },
                             "unit": {
-                                "default": "Property:HasMass#OSW2b1a3a39eceb4249b86897def91134dc"
+                                "default": "Property:HasMass#OSW2b1a3a39eceb4249b86897def91134dc",
+                                "readonly": true
                             },
                             "unit_symbol": {
                                 "$comment": "To set a default unit, we need to set both 'unit' and 'unit_symbol'",
-                                "default": "g"
+                                "default": "g",
+                                "readonly": true
                             }
                         }
                     },
@@ -219,14 +232,17 @@
                         },
                         "properties": {
                             "quantity": {
-                                "default": "Property:HasMass"
+                                "default": "Property:HasMass",
+                                "readonly": true
                             },
                             "unit": {
-                                "default": "Property:HasMass#OSW2b1a3a39eceb4249b86897def91134dc"
+                                "default": "Property:HasMass#OSW2b1a3a39eceb4249b86897def91134dc",
+                                "readonly": true
                             },
                             "unit_symbol": {
                                 "$comment": "To set a default unit, we need to set both 'unit' and 'unit_symbol'",
-                                "default": "g"
+                                "default": "g",
+                                "readonly": true
                             }
                         }
                     },

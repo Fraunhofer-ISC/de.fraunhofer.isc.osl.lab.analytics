@@ -13,7 +13,11 @@
                 "@type": "@id"
             },
             "id": "Property:HasId",
-            "process_plan": "Property:HasPlannedProcess"
+            "process_plan": "Property:HasPlannedProcess",
+            "samples": {
+                "@id": "Property:HasSample",
+                "@type": "@id"
+            }
         }
     ],
     "allOf": [
@@ -49,7 +53,43 @@
         "type": {
             "default": [
                 "Category:OSW5000c5d47b2f47648063e0354d9d1199"
-            ]
+            ],
+            "options": {
+                "hidden": true
+            }
+        },
+        "tool": {
+            "options": {
+                "hidden": true
+            }
+        },
+        "input": {
+            "options": {
+                "hidden": true
+            }
+        },
+        "output": {
+            "options": {
+                "hidden": true
+            }
+        },
+        "tasks": {
+            "options": {
+                "hidden": true
+            }
+        },
+        "start_date_time": {
+            "type": "string",
+            "format": "datetime-local",
+            "_template": "now",
+            "dynamic_template": "{{_now_}}",
+            "options": {
+                "flatpickr": {
+                    "dateFormat": "Z",
+                    "altInput": true,
+                    "altFormat": "Y-m-d h:i K"
+                }
+            }
         },
         "samples": {
             "title": "AC Samples",
@@ -72,7 +112,7 @@
                     "type": "mustache-wikitext",
                     "mode": "render",
                     "$comment": "render buttons for each sample with which an instance for the corresponding workflow can be created",
-                    "value": "{{#samples}}* {{{id}}} <br>geplant:\n{{#process_plan}} [[:{{{.}}}]] <div class=\"pagebot-button\" data-config='{ \"label\": \"➕\",   \"params\": {\"categories\": [\"{{{.}}}\"], \"jsondata\":{\"input\":[\"{{{osw_id}}}\"]}}}'></div>\ndokumentiert:\n{{=<% %>=}}{{#ask:[[HasInput::<%osw_id%>]]AND[[HasType::<%.%>]]}}<%={{ }}=%> {{/process_plan}}\n{{/samples}}"
+                    "value": "{{#samples}}* {{{id}}} <br>geplant: {{#process_plan}} [[:{{{.}}}]] <div class=\"pagebot-button\" data-config='{ \"label\": \"➕Doku Anlegen\",   \"params\": {\"categories\": [\"{{{.}}}\"], \"jsondata\":{\"input\":[\"{{{osw_id}}}\"]}}}'></div>\ndokumentiert:\n{{=<% %>=}}{{#ask:[[HasInput::<%osw_id%>]]AND[[HasType::<%.%>]]}}<%={{ }}=%> {{/process_plan}}\n{{/samples}}"
                 }
             ],
             "items": {
@@ -242,7 +282,6 @@
             },
             "type": "array",
             "format": "tabs",
-            "uniqueItems": true,
             "options": {
                 "enable_array_copy": true,
                 "array_copy_ignore": [
@@ -251,7 +290,9 @@
             },
             "items": {
                 "title": "Contact",
-                "title*": "Kontakt",
+                "title*": {
+                    "de": "Kontakt"
+                },
                 "type": "object",
                 "defaultProperties": [
                     "person",

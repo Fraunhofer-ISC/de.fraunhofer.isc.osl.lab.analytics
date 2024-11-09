@@ -12,7 +12,7 @@
             "globalID": "de.fraunhofer.isc.osl.lab.analytics",
             "label": "ISC Lab Analytics",
             "description": "Extends the ISC Package 'de.fraunhofer.isc.osl.lab' with concepts and pages that are specific to the (chemical) analytics.",
-            "version": "0.1.0",
+            "version": "0.2.0",
             "requiredPackages": [
                 "de.fraunhofer.isc.osl.lab"
             ],
@@ -121,6 +121,9 @@
                     "slots": {
                         "footer": {
                             "urlPath": "Category/OSW93cdd2f874774ab3ade44427cb60f286.slot_footer.wikitext"
+                        },
+                        "footer_template": {
+                            "urlPath": "Category/OSW93cdd2f874774ab3ade44427cb60f286.slot_footer_template.wikitext"
                         },
                         "header": {
                             "urlPath": "Category/OSW93cdd2f874774ab3ade44427cb60f286.slot_header.wikitext"

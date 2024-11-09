@@ -1,12 +1,9 @@
-Statements of this Item
+=== Visualisierungen der Einzelmessungen ===
 {{#ask: [[-HasStatement::{{FULLPAGENAME}}]]
-    <!--|?HasObject=Substance -->    
-    |?HasSubject
-    |?HasProperty
-    |?HasObject
-    |?HasStatement.HasProperty
-    |?HasStatement.HasObject
-    |?HasStatement.HasUnit
+    <!--|?-HasObject.HasSubject.-HasSample=Auftrag-->
+    |?HasSubject=Probe
+    |?HasObject=Datenobjekt
+    |?HasObject.HasImage=Visualisierung
     |format=datatable
     |limit=1000
 }}

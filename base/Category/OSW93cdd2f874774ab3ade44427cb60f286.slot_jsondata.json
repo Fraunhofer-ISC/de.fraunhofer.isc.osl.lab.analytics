@@ -9,11 +9,6 @@
             "key": "loss_on_ignition"
         },
         {
-            "uuid": "539d8a00-fafe-4e6b-9cd6-1e74699ad189",
-            "process_category": "Category:OSWa8f0708e996d4a66bc1d6e8c2e27b75c",
-            "key": "milling"
-        },
-        {
             "uuid": "463fe230-3264-412e-8c8a-59af8149f7bb",
             "process_category": "Category:OSW8c89baeb38e6418184f6bdd582489b7a",
             "key": "silicon_determination"

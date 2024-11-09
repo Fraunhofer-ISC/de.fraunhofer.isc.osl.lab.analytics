@@ -49,6 +49,7 @@
         },
         "raw_data": {
             "type": "array",
+            "format": "table",
             "title": "Raw data (file)",
             "title*": {
                 "de": "Rohdaten (Datei)"
@@ -74,6 +75,7 @@
         },
         "raw_data_link": {
             "type": "array",
+            "format": "table",
             "title": "Raw data (link)",
             "title*": {
                 "de": "Rohdaten (Link)"
@@ -89,6 +91,7 @@
         },
         "samples": {
             "type": "array",
+            "format": "table",
             "title": "Samples",
             "title*": {
                 "de": "Proben"
@@ -110,6 +113,7 @@
         },
         "measurement_device": {
             "type": "array",
+            "format": "table",
             "title": "Measurement Devices",
             "title*": {
                 "de": "Messgeräte"

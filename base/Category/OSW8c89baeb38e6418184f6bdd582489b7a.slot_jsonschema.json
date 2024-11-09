@@ -6,25 +6,7 @@
             "processes_object": "Property:HasPart"
         },
         {
-            "weighing_before_ignition": {
-                "@id": "Property:HasPart",
-                "@type": "@id"
-            }
-        },
-        {
-            "weighing_after_ignition": {
-                "@id": "Property:HasPart",
-                "@type": "@id"
-            }
-        },
-        {
-            "weighing_after_HF": {
-                "@id": "Property:HasPart",
-                "@type": "@id"
-            }
-        },
-        {
-            "calculation_gravimetric_silicon_content": {
+            "gravimetric_silicon_determination": {
                 "@id": "Property:HasPart",
                 "@type": "@id"
             }
@@ -54,21 +36,15 @@
         "en": "Gravimetric and ICP Determination of Silicon Content",
         "de": "Gravimetrische und ICP Bestimmung des Siliziumanteils"
     },
-    "description": "",
-    "description*": {},
+    "description": "Bestimmung des Siliziumanteils einer Probe durch Kombination von gravimetrischer und ICP Bestimmung",
+    "description*": {
+        "de": "Bestimmung des Siliziumanteils einer Probe durch Kombination von gravimetrischer und ICP Bestimmung"
+    },
     "required": [
         "type",
         "uuid"
     ],
     "properties": {
-        "type": {
-            "default": [
-                "Category:OSW8c89baeb38e6418184f6bdd582489b7a"
-            ],
-            "options": {
-                "hidden": true
-            }
-        },
         "uuid": {
             "type": "string",
             "format": "uuid",
@@ -93,11 +69,6 @@
                 "hidden": true
             }
         },
-        "start_date_time": {
-            "options": {
-                "hidden": true
-            }
-        },
         "projects": {
             "options": {
                 "hidden": true
@@ -118,14 +89,11 @@
             "title*": {
                 "de": "Workflow Prozesse"
             },
-            "format": "list",
+            "format": "categories",
             "type": "object",
             "defaultProperties": [
                 "uuid",
-                "weighing_before_ignition",
-                "weighing_after_ignition",
-                "weighing_after_HF",
-                "calculation_gravimetric_silicon_content",
+                "gravimetric_silicon_determination",
                 "rest_SiO2_ICP",
                 "soda_borax_ICP"
             ],
@@ -143,12 +111,12 @@
                         "hidden": true
                     }
                 },
-                "weighing_before_ignition": {
+                "gravimetric_silicon_determination": {
                     "type": "object",
-                    "title": "0: weighing_before_ignition",
+                    "title": "0: gravimetric_silicon_determination",
                     "allOf": [
                         {
-                            "$ref": "/wiki/Category:OSWf6fa3f8a74c848f1a5d9a5670283159a?action=raw&slot=jsonschema"
+                            "$ref": "/wiki/Category:OSW7e33cec6edee4bd2bb27c8f3bc6977b4?action=raw&slot=jsonschema"
                         }
                     ],
                     "options": {
@@ -161,11 +129,6 @@
                             }
                         },
                         "actionees": {
-                            "options": {
-                                "hidden": true
-                            }
-                        },
-                        "start_date_time": {
                             "options": {
                                 "hidden": true
                             }
@@ -193,202 +156,7 @@
                         "label": {
                             "default": [
                                 {
-                                    "text": "step 0: weighing_before_ignition",
-                                    "lang": "en"
-                                }
-                            ],
-                            "options": {
-                                "hidden": true
-                            }
-                        },
-                        "description": {
-                            "options": {
-                                "hidden": true
-                            }
-                        }
-                    }
-                },
-                "weighing_after_ignition": {
-                    "type": "object",
-                    "title": "1: weighing_after_ignition",
-                    "allOf": [
-                        {
-                            "$ref": "/wiki/Category:OSWf6fa3f8a74c848f1a5d9a5670283159a?action=raw&slot=jsonschema"
-                        }
-                    ],
-                    "options": {
-                        "remove_empty_properties": true
-                    },
-                    "properties": {
-                        "type": {
-                            "options": {
-                                "hidden": true
-                            }
-                        },
-                        "actionees": {
-                            "options": {
-                                "hidden": true
-                            }
-                        },
-                        "start_date_time": {
-                            "options": {
-                                "hidden": true
-                            }
-                        },
-                        "projects": {
-                            "options": {
-                                "hidden": true
-                            }
-                        },
-                        "input": {
-                            "options": {
-                                "hidden": true
-                            }
-                        },
-                        "output": {
-                            "options": {
-                                "hidden": true
-                            }
-                        },
-                        "tool": {
-                            "options": {
-                                "hidden": true
-                            }
-                        },
-                        "label": {
-                            "default": [
-                                {
-                                    "text": "step 1: weighing_after_ignition",
-                                    "lang": "en"
-                                }
-                            ],
-                            "options": {
-                                "hidden": true
-                            }
-                        },
-                        "description": {
-                            "options": {
-                                "hidden": true
-                            }
-                        }
-                    }
-                },
-                "weighing_after_HF": {
-                    "type": "object",
-                    "title": "2: weighing_after_HF",
-                    "allOf": [
-                        {
-                            "$ref": "/wiki/Category:OSWf6fa3f8a74c848f1a5d9a5670283159a?action=raw&slot=jsonschema"
-                        }
-                    ],
-                    "options": {
-                        "remove_empty_properties": true
-                    },
-                    "properties": {
-                        "type": {
-                            "options": {
-                                "hidden": true
-                            }
-                        },
-                        "actionees": {
-                            "options": {
-                                "hidden": true
-                            }
-                        },
-                        "start_date_time": {
-                            "options": {
-                                "hidden": true
-                            }
-                        },
-                        "projects": {
-                            "options": {
-                                "hidden": true
-                            }
-                        },
-                        "input": {
-                            "options": {
-                                "hidden": true
-                            }
-                        },
-                        "output": {
-                            "options": {
-                                "hidden": true
-                            }
-                        },
-                        "tool": {
-                            "options": {
-                                "hidden": true
-                            }
-                        },
-                        "label": {
-                            "default": [
-                                {
-                                    "text": "step 2: weighing_after_HF",
-                                    "lang": "en"
-                                }
-                            ],
-                            "options": {
-                                "hidden": true
-                            }
-                        },
-                        "description": {
-                            "options": {
-                                "hidden": true
-                            }
-                        }
-                    }
-                },
-                "calculation_gravimetric_silicon_content": {
-                    "type": "object",
-                    "title": "3: calculation_gravimetric_silicon_content",
-                    "allOf": [
-                        {
-                            "$ref": "/wiki/Category:OSWb6a227a110c54a4b95a9bfe0c41da102?action=raw&slot=jsonschema"
-                        }
-                    ],
-                    "options": {
-                        "remove_empty_properties": true
-                    },
-                    "properties": {
-                        "type": {
-                            "options": {
-                                "hidden": true
-                            }
-                        },
-                        "actionees": {
-                            "options": {
-                                "hidden": true
-                            }
-                        },
-                        "start_date_time": {
-                            "options": {
-                                "hidden": true
-                            }
-                        },
-                        "projects": {
-                            "options": {
-                                "hidden": true
-                            }
-                        },
-                        "input": {
-                            "options": {
-                                "hidden": true
-                            }
-                        },
-                        "output": {
-                            "options": {
-                                "hidden": true
-                            }
-                        },
-                        "tool": {
-                            "options": {
-                                "hidden": true
-                            }
-                        },
-                        "label": {
-                            "default": [
-                                {
-                                    "text": "step 3: calculation_gravimetric_silicon_content",
+                                    "text": "step 0: gravimetric_silicon_determination",
                                     "lang": "en"
                                 }
                             ],
@@ -405,13 +173,13 @@
                 },
                 "rest_SiO2_ICP": {
                     "type": "object",
-                    "title": "4: rest_SiO2_ICP",
+                    "title": "1: rest_SiO2_ICP",
                     "defaultProperties": [
                         "osw_id"
                     ],
                     "properties": {
                         "osw_id": {
-                            "title": "4: rest_SiO2_ICP",
+                            "title": "1: rest_SiO2_ICP",
                             "type": "string",
                             "description": "Link to the separately documented process step",
                             "description*": {
@@ -424,13 +192,13 @@
                 },
                 "soda_borax_ICP": {
                     "type": "object",
-                    "title": "5: soda_borax_ICP",
+                    "title": "2: soda_borax_ICP",
                     "defaultProperties": [
                         "osw_id"
                     ],
                     "properties": {
                         "osw_id": {
-                            "title": "5: soda_borax_ICP",
+                            "title": "2: soda_borax_ICP",
                             "type": "string",
                             "description": "Link to the separately documented process step",
                             "description*": {
@@ -441,6 +209,14 @@
                         }
                     }
                 }
+            }
+        },
+        "type": {
+            "default": [
+                "Category:OSW8c89baeb38e6418184f6bdd582489b7a"
+            ],
+            "options": {
+                "hidden": true
             }
         }
     },

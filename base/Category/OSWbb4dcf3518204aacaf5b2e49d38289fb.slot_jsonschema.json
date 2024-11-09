@@ -85,14 +85,17 @@
                         },
                         "properties": {
                             "quantity": {
-                                "default": "Property:HasMass"
+                                "default": "Property:HasMass",
+                                "readonly": true
                             },
                             "unit": {
-                                "default": "Property:HasMass#OSW8840c06a1f5e4242904dd3e714fe22d6"
+                                "default": "Property:HasMass#OSW8840c06a1f5e4242904dd3e714fe22d6",
+                                "readonly": true
                             },
                             "unit_symbol": {
                                 "$comment": "To set a default unit, we need to set both 'unit' and 'unit_symbol'",
-                                "default": "mg"
+                                "default": "mg",
+                                "readonly": true
                             }
                         }
                     },
@@ -109,14 +112,17 @@
                         },
                         "properties": {
                             "quantity": {
-                                "default": "Property:HasVolume"
+                                "default": "Property:HasVolume",
+                                "readonly": true
                             },
                             "unit": {
-                                "default": "Property:HasVolume#OSWb8cc22b1cbd44577b1fa48c440de7147"
+                                "default": "Property:HasVolume#OSWb8cc22b1cbd44577b1fa48c440de7147",
+                                "readonly": true
                             },
                             "unit_symbol": {
                                 "$comment": "To set a default unit, we need to set both 'unit' and 'unit_symbol'",
-                                "default": "ml"
+                                "default": "ml",
+                                "readonly": true
                             }
                         }
                     }

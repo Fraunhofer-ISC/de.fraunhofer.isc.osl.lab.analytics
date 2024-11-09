@@ -4,24 +4,9 @@
     ],
     "process_list": [
         {
-            "uuid": "12836be5-b150-4db6-9f29-8e396c3759c7",
-            "process_category": "Category:OSWf6fa3f8a74c848f1a5d9a5670283159a",
-            "key": "weighing_before_ignition"
-        },
-        {
-            "uuid": "4a514b2f-102a-4477-b20c-31f19b0ab476",
-            "process_category": "Category:OSWf6fa3f8a74c848f1a5d9a5670283159a",
-            "key": "weighing_after_ignition"
-        },
-        {
-            "uuid": "a3a98a13-dcb2-44d4-acb5-43ee44b03838",
-            "process_category": "Category:OSWf6fa3f8a74c848f1a5d9a5670283159a",
-            "key": "weighing_after_HF"
-        },
-        {
             "uuid": "4b7e6a32-cb67-49c3-960a-702663baa984",
-            "process_category": "Category:OSWb6a227a110c54a4b95a9bfe0c41da102",
-            "key": "calculation_gravimetric_silicon_content"
+            "process_category": "Category:OSW7e33cec6edee4bd2bb27c8f3bc6977b4",
+            "key": "gravimetric_silicon_determination"
         },
         {
             "uuid": "3cf50a32-55f1-4224-a6c4-81a461580c07",
@@ -36,7 +21,7 @@
             "document_separately": true
         }
     ],
-    "format": "list",
+    "format": "categories",
     "subclass_of": [
         "Category:OSW65f6adea07934d169b769105a4c25458",
         "Category:OSW4ef92ac53714494da09c377898bf275f"
@@ -52,6 +37,11 @@
             "lang": "de"
         }
     ],
-    "description": [],
+    "description": [
+        {
+            "text": "Bestimmung des Siliziumanteils einer Probe durch Kombination von gravimetrischer und ICP Bestimmung",
+            "lang": "de"
+        }
+    ],
     "name": "GravimetricAndIcpDeterminationOfSiliconContent"
 }

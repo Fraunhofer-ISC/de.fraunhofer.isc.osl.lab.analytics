@@ -1,12 +1,12 @@
 { 
     "@context": [
         {
-        "processes_object":"Property:HasPart"
+        "processes_object_commented":"Property:HasPart"
         },
         
         {{#each process_list}}
         {
-                "{{{key}}}":{
+                "{{{key}}}_commented":{
                     "@id":"Property:HasPart",
                     "@type": "@id"
                 }
@@ -47,11 +47,6 @@
           }
         },
         "actionees": {
-            "options": {
-                "hidden": true
-            }
-        },
-        "start_date_time": {
             "options": {
                 "hidden": true
             }
@@ -133,11 +128,6 @@
                             }
                         },
                         "actionees": {
-                            "options": {
-                                "hidden": true
-                            }
-                        },
-                        "start_date_time": {
                             "options": {
                                 "hidden": true
                             }

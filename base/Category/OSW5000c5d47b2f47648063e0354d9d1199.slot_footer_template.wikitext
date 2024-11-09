@@ -1,8 +1,10 @@
 == Proben zugeordnete Aufgaben ==
-{{#ask: [[-HasInput::{{FULLPAGENAME}}]]
+{{#ask: [[-HasSample::{{FULLPAGENAME}}]]
 |?HasId=ID
 |?HasName=Name
 |?HasOswId=OSW Id
-|?HasPlannedProcess=Geplante Prozesse
+|?HasPlannedProcess=(geplante) Methoden
+|?-HasInput=Angelegte Prozess(ausführungen)
+|?-HasSubject.HasObject=(erzeugte) Ergebnisse
 |format=table
 }}

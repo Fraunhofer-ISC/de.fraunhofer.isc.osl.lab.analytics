@@ -30,11 +30,55 @@
         "type": {
             "default": [
                 "Category:OSWba98920367be47fb8267d2e1d4bd41e5"
-            ]
+            ],
+            "options": {
+                "hidden": true
+            }
+        },
+        "label": {
+            "items": {
+                "properties": {
+                    "text": {
+                        "dynamic_template": "ICP-OES {{{dateformat 'Y_m_d-H_i_s' (_now_)}}}"
+                    }
+                }
+            },
+            "options": {
+                "hidden": true
+            }
+        },
+        "description": {
+            "options": {
+                "hidden": true
+            }
+        },
+        "projects": {
+            "options": {
+                "hidden": true
+            }
+        },
+        "input": {
+            "options": {
+                "hidden": true
+            }
+        },
+        "output": {
+            "options": {
+                "hidden": true
+            }
+        },
+        "tool": {
+            "items": {
+                "range": "Category:OSW31f1b280591c4520bbe303ae458c9f29"
+            }
         },
         "workflow_runs": {
             "$ref": "/wiki/JsonSchema:PrefectWorkflowRuns?action=raw",
             "$comment": "ICP Evaluation Flow",
+            "description": "no need to edit, only debugging",
+            "description*": {
+                "de": "muss nicht editiert werden, nur zur Fehlerbehebung"
+            },
             "default": {
                 "tool": [
                     "Item:OSW7934b4963cc75a2eb62a49be3d6f4635"
@@ -42,6 +86,21 @@
             },
             "options": {
                 "collapsed": true
+            }
+        },
+        "results": {
+            "type": "array",
+            "title": "Results",
+            "title*": {
+                "de": "Ergebnisse"
+            },
+            "items": {
+                "type": "object",
+                "allOf": [
+                    {
+                        "$ref": "/wiki/Category:OSWe328f0e5968d474ea501ced69b001926?action=raw&slot=jsonschema"
+                    }
+                ]
             }
         }
     }

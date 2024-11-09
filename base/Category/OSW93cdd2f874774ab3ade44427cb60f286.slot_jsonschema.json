@@ -2,34 +2,28 @@
     "@context": [
         "/wiki/Category:OSW65f6adea07934d169b769105a4c25458?action=raw&slot=jsonschema",
         {
-            "processes_object": "Property:HasPart"
+            "processes_object_commented": "Property:HasPart"
         },
         {
-            "loss_on_ignition": {
+            "loss_on_ignition_commented": {
                 "@id": "Property:HasPart",
                 "@type": "@id"
             }
         },
         {
-            "milling": {
+            "silicon_determination_commented": {
                 "@id": "Property:HasPart",
                 "@type": "@id"
             }
         },
         {
-            "silicon_determination": {
+            "boron_determination_commented": {
                 "@id": "Property:HasPart",
                 "@type": "@id"
             }
         },
         {
-            "boron_determination": {
-                "@id": "Property:HasPart",
-                "@type": "@id"
-            }
-        },
-        {
-            "multiple_oxides_determination": {
+            "multiple_oxides_determination_commented": {
                 "@id": "Property:HasPart",
                 "@type": "@id"
             }
@@ -47,20 +41,40 @@
         "de": "ICP-OES an Glaswolle",
         "en": "ICP-OES for Glasswool"
     },
-    "description": "",
-    "description*": {},
+    "description": "choose Workflow Processes at properties if not visible",
+    "description*": {
+        "de": "wählen Sie Workflow-Prozesse unter Eigenschaften, falls nicht sichtbar"
+    },
     "required": [
         "type",
         "uuid",
-        "workflow_runs"
+        "workflow_runs",
+        "start_date_time"
     ],
     "properties": {
-        "type": {
-            "default": [
-                "Category:OSW93cdd2f874774ab3ade44427cb60f286"
-            ],
+        "start_date_time": {
+            "type": "string",
+            "format": "datetime-local",
+            "_template": "now",
+            "dynamic_template": "{{_now_}}",
             "options": {
-                "hidden": true
+                "flatpickr": {
+                    "dateFormat": "Z",
+                    "altInput": true,
+                    "altFormat": "Y-m-d h:i K"
+                }
+            }
+        },
+        "workflow_runs": {
+            "$ref": "/wiki/JsonSchema:PrefectWorkflowRuns?action=raw",
+            "$comment": "ICP-OES Evaluation Flow",
+            "default": {
+                "tool": [
+                    "Item:OSW5a21de7c79f2536a926f79d712313672"
+                ]
+            },
+            "options": {
+                "collapsed": true
             }
         },
         "uuid": {
@@ -75,9 +89,6 @@
                 "properties": {
                     "text": {
                         "dynamic_template": "ICP-OES an Glaswolle {{{dateformat 'Y_m_d-H_i_s' (_now_)}}}"
-                    },
-                    "lang": {
-                        "default": "de"
                     }
                 }
             },
@@ -86,11 +97,6 @@
             }
         },
         "actionees": {
-            "options": {
-                "hidden": true
-            }
-        },
-        "start_date_time": {
             "options": {
                 "hidden": true
             }
@@ -110,6 +116,16 @@
                 "hidden": true
             }
         },
+        "input": {
+            "options": {
+                "hidden": true
+            }
+        },
+        "output": {
+            "options": {
+                "hidden": true
+            }
+        },
         "processes_object": {
             "title": "Workflow Processes",
             "title*": {
@@ -120,7 +136,6 @@
             "defaultProperties": [
                 "uuid",
                 "loss_on_ignition",
-                "milling",
                 "silicon_determination",
                 "boron_determination",
                 "multiple_oxides_determination"
@@ -157,11 +172,6 @@
                             }
                         },
                         "actionees": {
-                            "options": {
-                                "hidden": true
-                            }
-                        },
-                        "start_date_time": {
                             "options": {
                                 "hidden": true
                             }
@@ -204,74 +214,9 @@
                         }
                     }
                 },
-                "milling": {
-                    "type": "object",
-                    "title": "1: milling",
-                    "allOf": [
-                        {
-                            "$ref": "/wiki/Category:OSWa8f0708e996d4a66bc1d6e8c2e27b75c?action=raw&slot=jsonschema"
-                        }
-                    ],
-                    "options": {
-                        "remove_empty_properties": true
-                    },
-                    "properties": {
-                        "type": {
-                            "options": {
-                                "hidden": true
-                            }
-                        },
-                        "actionees": {
-                            "options": {
-                                "hidden": true
-                            }
-                        },
-                        "start_date_time": {
-                            "options": {
-                                "hidden": true
-                            }
-                        },
-                        "projects": {
-                            "options": {
-                                "hidden": true
-                            }
-                        },
-                        "input": {
-                            "options": {
-                                "hidden": true
-                            }
-                        },
-                        "output": {
-                            "options": {
-                                "hidden": true
-                            }
-                        },
-                        "tool": {
-                            "options": {
-                                "hidden": true
-                            }
-                        },
-                        "label": {
-                            "default": [
-                                {
-                                    "text": "step 1: milling",
-                                    "lang": "en"
-                                }
-                            ],
-                            "options": {
-                                "hidden": true
-                            }
-                        },
-                        "description": {
-                            "options": {
-                                "hidden": true
-                            }
-                        }
-                    }
-                },
                 "silicon_determination": {
                     "type": "object",
-                    "title": "2: silicon_determination",
+                    "title": "1: silicon_determination",
                     "allOf": [
                         {
                             "$ref": "/wiki/Category:OSW8c89baeb38e6418184f6bdd582489b7a?action=raw&slot=jsonschema"
@@ -291,11 +236,6 @@
                                 "hidden": true
                             }
                         },
-                        "start_date_time": {
-                            "options": {
-                                "hidden": true
-                            }
-                        },
                         "projects": {
                             "options": {
                                 "hidden": true
@@ -319,7 +259,7 @@
                         "label": {
                             "default": [
                                 {
-                                    "text": "step 2: silicon_determination",
+                                    "text": "step 1: silicon_determination",
                                     "lang": "en"
                                 }
                             ],
@@ -336,7 +276,7 @@
                 },
                 "boron_determination": {
                     "type": "object",
-                    "title": "3: boron_determination",
+                    "title": "2: boron_determination",
                     "allOf": [
                         {
                             "$ref": "/wiki/Category:OSW417f0e6df8bb4eb9bd6727fafdddc633?action=raw&slot=jsonschema"
@@ -356,11 +296,6 @@
                                 "hidden": true
                             }
                         },
-                        "start_date_time": {
-                            "options": {
-                                "hidden": true
-                            }
-                        },
                         "projects": {
                             "options": {
                                 "hidden": true
@@ -384,7 +319,7 @@
                         "label": {
                             "default": [
                                 {
-                                    "text": "step 3: boron_determination",
+                                    "text": "step 2: boron_determination",
                                     "lang": "en"
                                 }
                             ],
@@ -401,7 +336,7 @@
                 },
                 "multiple_oxides_determination": {
                     "type": "object",
-                    "title": "4: multiple_oxides_determination",
+                    "title": "3: multiple_oxides_determination",
                     "allOf": [
                         {
                             "$ref": "/wiki/Category:OSW37065ca362824d37b2d81dd8bbef1ca3?action=raw&slot=jsonschema"
@@ -421,11 +356,6 @@
                                 "hidden": true
                             }
                         },
-                        "start_date_time": {
-                            "options": {
-                                "hidden": true
-                            }
-                        },
                         "projects": {
                             "options": {
                                 "hidden": true
@@ -449,7 +379,7 @@
                         "label": {
                             "default": [
                                 {
-                                    "text": "step 4: multiple_oxides_determination",
+                                    "text": "step 3: multiple_oxides_determination",
                                     "lang": "en"
                                 }
                             ],
@@ -466,16 +396,12 @@
                 }
             }
         },
-        "workflow_runs": {
-            "$ref": "/wiki/JsonSchema:PrefectWorkflowRuns?action=raw",
-            "$comment": "ICP-OES Evaluation Flow",
-            "default": {
-                "tool": [
-                    "Item:OSW5a21de7c79f2536a926f79d712313672"
-                ]
-            },
+        "type": {
+            "default": [
+                "Category:OSW93cdd2f874774ab3ade44427cb60f286"
+            ],
             "options": {
-                "collapsed": true
+                "hidden": true
             }
         }
     },
